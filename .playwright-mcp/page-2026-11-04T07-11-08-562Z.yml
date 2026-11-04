@@ -1,0 +1,473 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link [ref=f8e8] [cursor=pointer]:
+          - /url: /home
+          - img "NUHS Logo" [ref=f8e9]
+        - generic [ref=f8e10]:
+          - generic [ref=f8e14]:
+            - generic [ref=f8e15]:
+              - generic [ref=f8e16] [cursor=pointer]: A
+              - generic [ref=f8e17] [cursor=pointer]
+              - generic [ref=f8e18] [cursor=pointer]: A
+            - list [ref=f8e20]:
+              - listitem [ref=f8e21]:
+                - link "facebook" [ref=f8e22] [cursor=pointer]:
+                  - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                  - generic [ref=f8e23]: 
+              - listitem [ref=f8e24]:
+                - link "instagram" [ref=f8e25] [cursor=pointer]:
+                  - /url: https://www.instagram.com/nuhsofficial
+                  - generic [ref=f8e26]: 
+              - listitem [ref=f8e27]:
+                - link "linkedin" [ref=f8e28] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/national-university-health-system
+                  - generic [ref=f8e29]: 
+            - link [ref=f8e31] [cursor=pointer]:
+              - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+              - text: Subscribe
+              - strong [ref=f8e32]: now
+          - button "search toggler" [ref=f8e33] [cursor=pointer]
+      - textbox "I want to know about..." [ref=f8e36]
+    - navigation [ref=f8e40]:
+      - list [ref=f8e41]:
+        - listitem [ref=f8e42]:
+          - link "NEWS" [ref=f8e43] [cursor=pointer]:
+            - /url: /home#news
+        - listitem [ref=f8e44]:
+          - link "LIFESTYLE" [ref=f8e45] [cursor=pointer]:
+            - /url: /home#lifestyle
+        - listitem [ref=f8e46]:
+          - link "SCIENCE" [ref=f8e47] [cursor=pointer]:
+            - /url: /home#science
+        - listitem [ref=f8e48]:
+          - link "PEOPLE" [ref=f8e49] [cursor=pointer]:
+            - /url: /home#people
+        - listitem [ref=f8e50]:
+          - link "MULTIMEDIA" [ref=f8e51] [cursor=pointer]:
+            - /url: /home#multimedia
+        - listitem [ref=f8e52]:
+          - link "MEDIPEDIA" [ref=f8e53] [cursor=pointer]:
+            - /url: /medipedia
+        - listitem [ref=f8e54]:
+          - generic [ref=f8e55] [cursor=pointer]: ABOUT US
+          - text: 
+  - main [ref=f8e56]:
+    - generic [ref=f8e58]:
+      - generic [ref=f8e59]:
+        - textbox "Search within Articles" [ref=f8e61]: AI
+        - generic [ref=f8e62]:
+          - paragraph [ref=f8e64]: Showing 279 results for AI
+          - generic [ref=f8e65]:
+            - generic [ref=f8e66]: "Sort by:"
+            - generic [ref=f8e67]:
+              - combobox [ref=f8e68]:
+                - option "Alphabetical"
+                - option "Published Date" [selected]
+              - combobox "Published Date" [ref=f8e507] [cursor=pointer]
+      - generic [ref=f8e73]:
+        - generic [ref=f8e157]:
+          - 'link "[TEST] [FB Embed] Tomorrow''s health, today: From population signals to personal genomes Multimedia Science [TEST] [FB Embed] Tomorrow''s health, today: From population signals to personal genomes  Medicine has always sought to understand the causes of disease. This has evolved from studying patterns across populations to examining changes within the body at a molecular and biological level." [ref=f8e159] [cursor=pointer]':
+            - /url: /stories/test---fb-embed--tomorrow's-health--today--from-population-signals-to-personal-genomes
+            - 'img "[TEST] [FB Embed] Tomorrow''s health, today: From population signals to personal genomes" [ref=f8e161]'
+            - generic [ref=f8e162]:
+              - generic [ref=f8e163]: Multimedia
+              - generic [ref=f8e164]: Science
+              - paragraph [ref=f8e165]: "[TEST] [FB Embed] Tomorrow's health, today: From population signals to personal genomes"
+              - generic [ref=f8e166]: 
+              - paragraph [ref=f8e167]: Medicine has always sought to understand the causes of disease. This has evolved from studying patterns across populations to examining changes within the body at a molecular and biological level.
+          - 'link "[Test] Myopia: Myths and facts Lifestyle [Test] Myopia: Myths and facts  Need glasses? So do an overwhelmingly large proportion of Singaporeans. 65% of children are myopic by 12 years old and myopia is a growing problem." [ref=f8e169] [cursor=pointer]':
+            - /url: /article/test-myopia-myths-and-facts
+            - 'img "[Test] Myopia: Myths and facts" [ref=f8e171]'
+            - generic [ref=f8e172]:
+              - generic [ref=f8e173]: Lifestyle
+              - paragraph [ref=f8e174]: "[Test] Myopia: Myths and facts"
+              - generic [ref=f8e175]: 
+              - paragraph [ref=f8e176]: Need glasses? So do an overwhelmingly large proportion of Singaporeans. 65% of children are myopic by 12 years old and myopia is a growing problem.
+          - 'link "[TEST2] Myopia: Myths and facts Test Lifestyle [TEST2] Myopia: Myths and facts Test  Need glasses? So do an overwhelmingly large proportion of Singaporeans. 65% of children are myopic by 12 years old and myopia is a growing problem." [ref=f8e178] [cursor=pointer]':
+            - /url: /article/test2-myopia-myths-and-facts-test
+            - 'img "[TEST2] Myopia: Myths and facts Test" [ref=f8e180]'
+            - generic [ref=f8e181]:
+              - generic [ref=f8e182]: Lifestyle
+              - paragraph [ref=f8e183]: "[TEST2] Myopia: Myths and facts Test"
+              - generic [ref=f8e184]: 
+              - paragraph [ref=f8e185]: Need glasses? So do an overwhelmingly large proportion of Singaporeans. 65% of children are myopic by 12 years old and myopia is a growing problem.
+          - link "[WIP, please do not edit] Shaping the next generation of pharmacists News People [WIP, please do not edit] Shaping the next generation of pharmacists  From building pharmacist-led clinics to guiding the profession through national challenges, Ms Esther Bek’s leadership has left a deep imprint." [ref=f8e187] [cursor=pointer]:
+            - /url: /article/wip--please-do-not-edit--shaping-the-next-generation-of-pharmacists
+            - img "[WIP, please do not edit] Shaping the next generation of pharmacists" [ref=f8e189]
+            - generic [ref=f8e190]:
+              - generic [ref=f8e191]: News
+              - generic [ref=f8e192]: People
+              - paragraph [ref=f8e193]: "[WIP, please do not edit] Shaping the next generation of pharmacists"
+              - generic [ref=f8e194]: 
+              - paragraph [ref=f8e195]: From building pharmacist-led clinics to guiding the profession through national challenges, Ms Esther Bek’s leadership has left a deep imprint.
+          - link "[WS Copy] Singapore's Academic Health System Multimedia [WS Copy] Singapore's Academic Health System  Discover the groundbreaking medical and technological innovations, and population health strategies pioneered by the National University Health System." [ref=f8e197] [cursor=pointer]:
+            - /url: /stories/singapore's-academic--health-system
+            - img "[WS Copy] Singapore's Academic Health System" [ref=f8e199]
+            - generic [ref=f8e200]:
+              - generic [ref=f8e201]: Multimedia
+              - paragraph [ref=f8e202]: "[WS Copy] Singapore's Academic Health System"
+              - generic [ref=f8e203]: 
+              - paragraph [ref=f8e204]: Discover the groundbreaking medical and technological innovations, and population health strategies pioneered by the National University Health System.
+          - 'link "4 Festive feasting with diabetes: A dietitian’s top tips Lifestyle 4 Festive feasting with diabetes: A dietitian’s top tips  Diabetes need not hold you back at holiday gatherings. Here is how to enjoy the season without the sugar spike." [ref=f8e206] [cursor=pointer]':
+            - /url: /article/4-festive-feasting-with-diabetes--a-dietitian-s-top-tips
+            - 'img "4 Festive feasting with diabetes: A dietitian’s top tips" [ref=f8e208]'
+            - generic [ref=f8e209]:
+              - generic [ref=f8e210]: Lifestyle
+              - paragraph [ref=f8e211]: "4 Festive feasting with diabetes: A dietitian’s top tips"
+              - generic [ref=f8e212]: 
+              - paragraph [ref=f8e213]: Diabetes need not hold you back at holiday gatherings. Here is how to enjoy the season without the sugar spike.
+          - link "5 ways your care manager supports your mental wellbeing People 5 ways your care manager supports your mental wellbeing  Did you know that, beyond your usual check-ups, you can talk to a care manager at your polyclinic about mental health concerns? Here’s how they can help." [ref=f8e215] [cursor=pointer]:
+            - /url: /article/5-ways-your-care-manager-supports-your-mental-wellbeing
+            - img "5 ways your care manager supports your mental wellbeing" [ref=f8e217]
+            - generic [ref=f8e218]:
+              - generic [ref=f8e219]: People
+              - paragraph [ref=f8e220]: 5 ways your care manager supports your mental wellbeing
+              - generic [ref=f8e221]: 
+              - paragraph [ref=f8e222]: Did you know that, beyond your usual check-ups, you can talk to a care manager at your polyclinic about mental health concerns? Here’s how they can help.
+          - link "7 things to know about mpox Lifestyle News 7 things to know about mpox  As mpox continues its global spread, staying informed is crucial. Here are the key facts that will help you understand the disease and safeguard yourself." [ref=f8e224] [cursor=pointer]:
+            - /url: /article/7-things-to-know-about-mpox
+            - img "7 things to know about mpox" [ref=f8e226]
+            - generic [ref=f8e227]:
+              - generic [ref=f8e228]: Lifestyle
+              - generic [ref=f8e229]: News
+              - paragraph [ref=f8e230]: 7 things to know about mpox
+              - generic [ref=f8e231]: 
+              - paragraph [ref=f8e232]: As mpox continues its global spread, staying informed is crucial. Here are the key facts that will help you understand the disease and safeguard yourself.
+          - link "9 great benefits of exercise for older adults Lifestyle 9 great benefits of exercise for older adults  As we go out less, our levels of activity have inevitably dropped. Increased time sitting around can result in the risk of sarcopenia. This underscores the importance of exercising among older adults." [ref=f8e234] [cursor=pointer]:
+            - /url: /article/9-great-benefits-of-exercise-for-older-adults
+            - img "9 great benefits of exercise for older adults" [ref=f8e236]
+            - generic [ref=f8e237]:
+              - generic [ref=f8e238]: Lifestyle
+              - paragraph [ref=f8e239]: 9 great benefits of exercise for older adults
+              - generic [ref=f8e240]: 
+              - paragraph [ref=f8e241]: As we go out less, our levels of activity have inevitably dropped. Increased time sitting around can result in the risk of sarcopenia. This underscores the importance of exercising among older adults.
+          - link "A cure for the incurable Science News A cure for the incurable  A new treatment option has emerged for colorectal cancer patients with previously-incurable liver metastasis, a study by NUHS clinicians says." [ref=f8e243] [cursor=pointer]:
+            - /url: /article/a-cure-for-the-incurable
+            - img "A cure for the incurable" [ref=f8e245]
+            - generic [ref=f8e246]:
+              - generic [ref=f8e247]: Science
+              - generic [ref=f8e248]: News
+              - paragraph [ref=f8e249]: A cure for the incurable
+              - generic [ref=f8e250]: 
+              - paragraph [ref=f8e251]: A new treatment option has emerged for colorectal cancer patients with previously-incurable liver metastasis, a study by NUHS clinicians says.
+          - link "A daughter’s journey that deepened a father’s purpose in care News People Multimedia A daughter’s journey that deepened a father’s purpose in care  A daughter's rare condition deepened pharmacist Nigel Lim's understanding of care and strengthened his purpose in public healthcare." [ref=f8e253] [cursor=pointer]:
+            - /url: /stories/how-a-daughter-shaped-her-father-s-purpose-as-a-pharmacist
+            - img "A daughter’s journey that deepened a father’s purpose in care" [ref=f8e255]
+            - generic [ref=f8e256]:
+              - generic [ref=f8e257]: News
+              - generic [ref=f8e258]: People
+              - generic [ref=f8e259]: Multimedia
+              - paragraph [ref=f8e260]: A daughter’s journey that deepened a father’s purpose in care
+              - generic [ref=f8e261]: 
+              - paragraph [ref=f8e262]: A daughter's rare condition deepened pharmacist Nigel Lim's understanding of care and strengthened his purpose in public healthcare.
+          - link "A genetic clue behind a boy’s kidney failure News A genetic clue behind a boy’s kidney failure  His urine looked like soap suds. By eight, he was on dialysis. A rare gene test finally explained why and shows how NUHS is bringing genomics into routine care." [ref=f8e264] [cursor=pointer]:
+            - /url: /article/a-genetic-clue-behind-a-boy-s-kidney-failure
+            - img "A genetic clue behind a boy’s kidney failure" [ref=f8e266]
+            - generic [ref=f8e267]:
+              - generic [ref=f8e268]: News
+              - paragraph [ref=f8e269]: A genetic clue behind a boy’s kidney failure
+              - generic [ref=f8e270]: 
+              - paragraph [ref=f8e271]: His urine looked like soap suds. By eight, he was on dialysis. A rare gene test finally explained why and shows how NUHS is bringing genomics into routine care.
+          - link "A new NUHS centre brings genomics into routine care Multimedia News A new NUHS centre brings genomics into routine care  Called NUGEM, this centre will expand genetic testing beyond rare diseases, guiding earlier diagnosis, targeted treatment and proactive family screening." [ref=f8e273] [cursor=pointer]:
+            - /url: /stories/nugem-brings-genomic-medicine-into-nuhs-everyday-care
+            - img "A new NUHS centre brings genomics into routine care" [ref=f8e275]
+            - generic [ref=f8e276]:
+              - generic [ref=f8e277]: Multimedia
+              - generic [ref=f8e278]: News
+              - paragraph [ref=f8e279]: A new NUHS centre brings genomics into routine care
+              - generic [ref=f8e280]: 
+              - paragraph [ref=f8e281]: Called NUGEM, this centre will expand genetic testing beyond rare diseases, guiding earlier diagnosis, targeted treatment and proactive family screening.
+          - link "A new role for AI in speech rehabilitation Science A new role for AI in speech rehabilitation  Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care." [ref=f8e283] [cursor=pointer]:
+            - /url: /article/a-new-role-for-ai-in-speech-rehabilitation
+            - img "A new role for AI in speech rehabilitation" [ref=f8e285]
+            - generic [ref=f8e286]:
+              - generic [ref=f8e287]: Science
+              - paragraph [ref=f8e288]: A new role for AI in speech rehabilitation
+              - generic [ref=f8e289]: 
+              - paragraph [ref=f8e290]: Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care.
+          - 'link "A rare breed: a dentist for the elderly People A rare breed: a dentist for the elderly  As one of the three geriatrics-trained dentists in NUHS, Asst Prof Tan Mei Na’s career path has hardly been orthodox. While treating elderly patients can be challenging, it is also particularly meaningful, she shared." [ref=f8e292] [cursor=pointer]':
+            - /url: /article/a-rare-breed-a-dentist-for-the-elderly
+            - 'img "A rare breed: a dentist for the elderly" [ref=f8e294]'
+            - generic [ref=f8e295]:
+              - generic [ref=f8e296]: People
+              - paragraph [ref=f8e297]: "A rare breed: a dentist for the elderly"
+              - generic [ref=f8e298]: 
+              - paragraph [ref=f8e299]: As one of the three geriatrics-trained dentists in NUHS, Asst Prof Tan Mei Na’s career path has hardly been orthodox. While treating elderly patients can be challenging, it is also particularly meaningful, she shared.
+          - link "A simpler way to test vision at NUH News A simpler way to test vision at NUH  A compact, automated visual acuity testing device developed in-house is easing staff workload and giving patients a more consistent eye check." [ref=f8e301] [cursor=pointer]:
+            - /url: /article/a-simpler-way-to-test-vision-at-nuh
+            - img "A simpler way to test vision at NUH" [ref=f8e303]
+            - generic [ref=f8e304]:
+              - generic [ref=f8e305]: News
+              - paragraph [ref=f8e306]: A simpler way to test vision at NUH
+              - generic [ref=f8e307]: 
+              - paragraph [ref=f8e308]: A compact, automated visual acuity testing device developed in-house is easing staff workload and giving patients a more consistent eye check.
+          - link "A steady hand in care and leadership News People A steady hand in care and leadership  Ms Beryl Wong has spent two decades advancing the field of physiotherapy for patients and colleagues alike." [ref=f8e310] [cursor=pointer]:
+            - /url: /article/a-steady-hand-in-care-and-leadership
+            - img "A steady hand in care and leadership" [ref=f8e312]
+            - generic [ref=f8e313]:
+              - generic [ref=f8e314]: News
+              - generic [ref=f8e315]: People
+              - paragraph [ref=f8e316]: A steady hand in care and leadership
+              - generic [ref=f8e317]: 
+              - paragraph [ref=f8e318]: Ms Beryl Wong has spent two decades advancing the field of physiotherapy for patients and colleagues alike.
+          - link "ACTIVATION uncovers hidden disease before symptoms appear News Lifestyle Science ACTIVATION uncovers hidden disease before symptoms appear  Alexandra Hospital's ACTIVATION uses digital monitoring and coaching to detect hidden health risks and support earlier intervention." [ref=f8e320] [cursor=pointer]:
+            - /url: /article/digital-coaching-closes-the-gap-in-silent-chronic-disease
+            - img "ACTIVATION uncovers hidden disease before symptoms appear" [ref=f8e322]
+            - generic [ref=f8e323]:
+              - generic [ref=f8e324]: News
+              - generic [ref=f8e325]: Lifestyle
+              - generic [ref=f8e326]: Science
+              - paragraph [ref=f8e327]: ACTIVATION uncovers hidden disease before symptoms appear
+              - generic [ref=f8e328]: 
+              - paragraph [ref=f8e329]: Alexandra Hospital's ACTIVATION uses digital monitoring and coaching to detect hidden health risks and support earlier intervention.
+          - 'link "ADHD in adulthood: Singaporeans finding answers News Lifestyle ADHD in adulthood: Singaporeans finding answers  Once seen as a childhood disorder, ADHD is now being recognised among adults in Singapore, many learning in midlife why they struggled for years." [ref=f8e331] [cursor=pointer]':
+            - /url: /article/adhd-in-adulthood--singaporeans-finding-answers
+            - 'img "ADHD in adulthood: Singaporeans finding answers" [ref=f8e333]'
+            - generic [ref=f8e334]:
+              - generic [ref=f8e335]: News
+              - generic [ref=f8e336]: Lifestyle
+              - paragraph [ref=f8e337]: "ADHD in adulthood: Singaporeans finding answers"
+              - generic [ref=f8e338]: 
+              - paragraph [ref=f8e339]: Once seen as a childhood disorder, ADHD is now being recognised among adults in Singapore, many learning in midlife why they struggled for years.
+          - 'link "ADHD: Can we have your attention please Lifestyle ADHD: Can we have your attention please  While ADHD most commonly occurs in children, the disorder also affects adults, whether they are formally diagnosed or not. Do you need to get evaluated for Adult ADHD?" [ref=f8e341] [cursor=pointer]':
+            - /url: /article/adhd-can-we-have-your-attention-please
+            - 'img "ADHD: Can we have your attention please" [ref=f8e343]'
+            - generic [ref=f8e344]:
+              - generic [ref=f8e345]: Lifestyle
+              - paragraph [ref=f8e346]: "ADHD: Can we have your attention please"
+              - generic [ref=f8e347]: 
+              - paragraph [ref=f8e348]: While ADHD most commonly occurs in children, the disorder also affects adults, whether they are formally diagnosed or not. Do you need to get evaluated for Adult ADHD?
+          - link "Advancing dental research with the NUCOHS Tooth Tissue Bank News Science Advancing dental research with the NUCOHS Tooth Tissue Bank  Go behind the scenes at the NUCOHS Tooth Tissue Bank and discover the fascinating process behind its operations." [ref=f8e350] [cursor=pointer]:
+            - /url: /article/advancing-dental-research-with-the-nucohs-tooth-tissue-bank
+            - img "Advancing dental research with the NUCOHS Tooth Tissue Bank" [ref=f8e352]
+            - generic [ref=f8e353]:
+              - generic [ref=f8e354]: News
+              - generic [ref=f8e355]: Science
+              - paragraph [ref=f8e356]: Advancing dental research with the NUCOHS Tooth Tissue Bank
+              - generic [ref=f8e357]: 
+              - paragraph [ref=f8e358]: Go behind the scenes at the NUCOHS Tooth Tissue Bank and discover the fascinating process behind its operations.
+          - 'link "After COVID-19 vaccination: To work out or not to work out? News Lifestyle After COVID-19 vaccination: To work out or not to work out?  Reports that the second dose of mRNA COVID-19 vaccines may be associated with a small risk of myocarditis and pericarditis in young men have been brought to the fore." [ref=f8e360] [cursor=pointer]':
+            - /url: /article/after-covid-19-vaccination-to-work-out-or-not-to-work-out
+            - 'img "After COVID-19 vaccination: To work out or not to work out?" [ref=f8e362]'
+            - generic [ref=f8e363]:
+              - generic [ref=f8e364]: News
+              - generic [ref=f8e365]: Lifestyle
+              - paragraph [ref=f8e366]: "After COVID-19 vaccination: To work out or not to work out?"
+              - generic [ref=f8e367]: 
+              - paragraph [ref=f8e368]: Reports that the second dose of mRNA COVID-19 vaccines may be associated with a small risk of myocarditis and pericarditis in young men have been brought to the fore.
+          - link "AI making us think less? What happens when we outsource our thinking? Science AI making us think less? What happens when we outsource our thinking?  From writing emails to decision making, AI can take over tasks that once required us to think. A neurologist explains how this may affect memory, attention and critical thinking." [ref=f8e370] [cursor=pointer]:
+            - /url: /article/ai-making-us-think-less-what-happens-when-we-outsource-our-thinking
+            - img "AI making us think less? What happens when we outsource our thinking?" [ref=f8e372]
+            - generic [ref=f8e373]:
+              - generic [ref=f8e374]: Science
+              - paragraph [ref=f8e375]: AI making us think less? What happens when we outsource our thinking?
+              - generic [ref=f8e376]: 
+              - paragraph [ref=f8e377]: From writing emails to decision making, AI can take over tasks that once required us to think. A neurologist explains how this may affect memory, attention and critical thinking.
+          - link "Are ice baths safe? 6 things to know about the trend Lifestyle Are ice baths safe? 6 things to know about the trend  A growing number of people have been taking ice baths for purported health benefits such as muscle relief. Dive into the facts before joining them." [ref=f8e379] [cursor=pointer]:
+            - /url: /article/are-ice-baths-safe--6-things-to-know-about-the-trend
+            - img "Are ice baths safe? 6 things to know about the trend" [ref=f8e381]
+            - generic [ref=f8e382]:
+              - generic [ref=f8e383]: Lifestyle
+              - paragraph [ref=f8e384]: Are ice baths safe? 6 things to know about the trend
+              - generic [ref=f8e385]: 
+              - paragraph [ref=f8e386]: A growing number of people have been taking ice baths for purported health benefits such as muscle relief. Dive into the facts before joining them.
+          - link "Are we asking the right questions? Multimedia Science People Are we asking the right questions?  The answers were always in patients' experiences. A decade of outcomes measurement helped NUHS listen more closely, challenge assumptions and redesign care around what matters most." [ref=f8e388] [cursor=pointer]:
+            - /url: /stories/nuhs-avbc-are-we-asking-the-right-questions
+            - img "Are we asking the right questions?" [ref=f8e390]
+            - generic [ref=f8e391]:
+              - generic [ref=f8e392]: Multimedia
+              - generic [ref=f8e393]: Science
+              - generic [ref=f8e394]: People
+              - paragraph [ref=f8e395]: Are we asking the right questions?
+              - generic [ref=f8e396]: 
+              - paragraph [ref=f8e397]: The answers were always in patients' experiences. A decade of outcomes measurement helped NUHS listen more closely, challenge assumptions and redesign care around what matters most.
+          - link "Are you prepared to bear the financial costs of cancer? News Are you prepared to bear the financial costs of cancer?  A National University Cancer Institute" [ref=f8e399] [cursor=pointer]:
+            - /url: /article/are-you-prepared-to-bear-the-financial-costs-of-cancer
+            - img "Are you prepared to bear the financial costs of cancer?" [ref=f8e401]
+            - generic [ref=f8e402]:
+              - generic [ref=f8e403]: News
+              - paragraph [ref=f8e404]: Are you prepared to bear the financial costs of cancer?
+              - generic [ref=f8e405]: 
+              - paragraph [ref=f8e406]: A National University Cancer Institute
+          - link "Are you taking your vitamins the correct way? Lifestyle Are you taking your vitamins the correct way?  Vitamins are essential for the body to function properly — but this doesn’t mean you should automatically start loading up on supplements." [ref=f8e408] [cursor=pointer]:
+            - /url: /article/are-you-taking-your-vitamins-the-correct-way
+            - img "Are you taking your vitamins the correct way?" [ref=f8e410]
+            - generic [ref=f8e411]:
+              - generic [ref=f8e412]: Lifestyle
+              - paragraph [ref=f8e413]: Are you taking your vitamins the correct way?
+              - generic [ref=f8e414]: 
+              - paragraph [ref=f8e415]: Vitamins are essential for the body to function properly — but this doesn’t mean you should automatically start loading up on supplements.
+          - link "Article Title News Science People Article Title  This is a testing standfirst for sitefinity upgrade." [ref=f8e417] [cursor=pointer]:
+            - /url: /article/article-title
+            - img "Article Title" [ref=f8e419]
+            - generic [ref=f8e420]:
+              - generic [ref=f8e421]: News
+              - generic [ref=f8e422]: Science
+              - generic [ref=f8e423]: People
+              - paragraph [ref=f8e424]: Article Title
+              - generic [ref=f8e425]: 
+              - paragraph [ref=f8e426]: This is a testing standfirst for sitefinity upgrade.
+          - link "Article Title News Science People Article Title  This is a testing for standfirst" [ref=f8e428] [cursor=pointer]:
+            - /url: /article/article-title-test-october-2026
+            - img "Article Title" [ref=f8e430]
+            - generic [ref=f8e431]:
+              - generic [ref=f8e432]: News
+              - generic [ref=f8e433]: Science
+              - generic [ref=f8e434]: People
+              - paragraph [ref=f8e435]: Article Title
+              - generic [ref=f8e436]: 
+              - paragraph [ref=f8e437]: This is a testing for standfirst
+          - link "At the crossroads of science and patient care Multimedia People At the crossroads of science and patient care  Group Chief Scientist Prof Chng Wee Joo brings science and clinical practice together in his work to advance precision medicine and improve outcomes for cancer patients." [ref=f8e439] [cursor=pointer]:
+            - /url: /stories/at-the-crossroads-of-science-and-care
+            - img "At the crossroads of science and patient care" [ref=f8e441]
+            - generic [ref=f8e442]:
+              - generic [ref=f8e443]: Multimedia
+              - generic [ref=f8e444]: People
+              - paragraph [ref=f8e445]: At the crossroads of science and patient care
+              - generic [ref=f8e446]: 
+              - paragraph [ref=f8e447]: Group Chief Scientist Prof Chng Wee Joo brings science and clinical practice together in his work to advance precision medicine and improve outcomes for cancer patients.
+          - 'link "Autism and parenting: Connecting with your child on the spectrum Lifestyle Autism and parenting: Connecting with your child on the spectrum  These simple strategies can bring out the best in your young one and build a deeper connection." [ref=f8e449] [cursor=pointer]':
+            - /url: /article/autism-and-parenting--connecting-with-your-child-on-the-spectrum
+            - 'img "Autism and parenting: Connecting with your child on the spectrum" [ref=f8e451]'
+            - generic [ref=f8e452]:
+              - generic [ref=f8e453]: Lifestyle
+              - paragraph [ref=f8e454]: "Autism and parenting: Connecting with your child on the spectrum"
+              - generic [ref=f8e455]: 
+              - paragraph [ref=f8e456]: These simple strategies can bring out the best in your young one and build a deeper connection.
+          - 'link "Autism and parenting: Connecting with your child on the spectrum - Test SVG Img Lifestyle Autism and parenting: Connecting with your child on the spectrum - Test SVG Img  These simple strategies can bring out the best in your young one and build a deeper connection." [ref=f8e458] [cursor=pointer]':
+            - /url: /article/autism-and-parenting--connecting-with-your-child-on-the-spectrum---test-svg-img
+            - 'img "Autism and parenting: Connecting with your child on the spectrum - Test SVG Img" [ref=f8e460]'
+            - generic [ref=f8e461]:
+              - generic [ref=f8e462]: Lifestyle
+              - paragraph [ref=f8e463]: "Autism and parenting: Connecting with your child on the spectrum - Test SVG Img"
+              - generic [ref=f8e464]: 
+              - paragraph [ref=f8e465]: These simple strategies can bring out the best in your young one and build a deeper connection.
+          - link "Automated booths cut hearing test waits at NTFGH Lifestyle Science News Automated booths cut hearing test waits at NTFGH  Demand for hearing tests has more than doubled in a decade, and new automated booths at NTFGH are cutting waits and costs while freeing audiologists." [ref=f8e467] [cursor=pointer]:
+            - /url: /article/automated-booths-cut-hearing-test-waits-at-ntfgh
+            - img "Automated booths cut hearing test waits at NTFGH" [ref=f8e469]
+            - generic [ref=f8e470]:
+              - generic [ref=f8e471]: Lifestyle
+              - generic [ref=f8e472]: Science
+              - generic [ref=f8e473]: News
+              - paragraph [ref=f8e474]: Automated booths cut hearing test waits at NTFGH
+              - generic [ref=f8e475]: 
+              - paragraph [ref=f8e476]: Demand for hearing tests has more than doubled in a decade, and new automated booths at NTFGH are cutting waits and costs while freeing audiologists.
+          - 'link "Baby marathon: How pregnancy pushes your heart to its limits Lifestyle Baby marathon: How pregnancy pushes your heart to its limits  Pregnancy makes your heart work 50 per cent harder. Here’s what happens inside your body, when to seek help and how to protect your heart." [ref=f8e478] [cursor=pointer]':
+            - /url: /article/baby-marathon-how-pregnancy-pushes-your-heart-to-its-limits
+            - 'img "Baby marathon: How pregnancy pushes your heart to its limits" [ref=f8e480]'
+            - generic [ref=f8e481]:
+              - generic [ref=f8e482]: Lifestyle
+              - paragraph [ref=f8e483]: "Baby marathon: How pregnancy pushes your heart to its limits"
+              - generic [ref=f8e484]: 
+              - paragraph [ref=f8e485]: Pregnancy makes your heart work 50 per cent harder. Here’s what happens inside your body, when to seek help and how to protect your heart.
+          - 'link "Backed up and fed up: The hidden burden of IBS‑C Lifestyle Backed up and fed up: The hidden burden of IBS‑C  Often overlooked, irritable bowel syndrome with constipation is a chronic condition that disrupts daily life. But with growing awareness and evolving treatments, relief is within reach." [ref=f8e487] [cursor=pointer]':
+            - /url: /article/backed-up-and-fed-up-the-hidden-burden-of-ibs-c
+            - 'img "Backed up and fed up: The hidden burden of IBS‑C" [ref=f8e489]'
+            - generic [ref=f8e490]:
+              - generic [ref=f8e491]: Lifestyle
+              - paragraph [ref=f8e492]: "Backed up and fed up: The hidden burden of IBS‑C"
+              - generic [ref=f8e493]: 
+              - paragraph [ref=f8e494]: Often overlooked, irritable bowel syndrome with constipation is a chronic condition that disrupts daily life. But with growing awareness and evolving treatments, relief is within reach.
+          - 'link "Behind the beam: The radiation physicists shaping your cancer care People News Behind the beam: The radiation physicists shaping your cancer care  Rarely seen by patients, these allied health professionals like Mr Khor Jong Shin calibrate life-saving equipment used in radiation therapy." [ref=f8e496] [cursor=pointer]':
+            - /url: /stories/behind-the-beam-the-radiation-physicists-shaping-your-cancer-care
+            - 'img "Behind the beam: The radiation physicists shaping your cancer care" [ref=f8e498]'
+            - generic [ref=f8e499]:
+              - generic [ref=f8e500]: People
+              - generic [ref=f8e501]: News
+              - paragraph [ref=f8e502]: "Behind the beam: The radiation physicists shaping your cancer care"
+              - generic [ref=f8e503]: 
+              - paragraph [ref=f8e504]: Rarely seen by patients, these allied health professionals like Mr Khor Jong Shin calibrate life-saving equipment used in radiation therapy.
+        - button "LOAD MORE" [ref=f8e506] [cursor=pointer]
+    - generic [ref=f8e83]:
+      - paragraph [ref=f8e84]: Stay informed
+      - paragraph [ref=f8e85]: on the latest health, science and patient stories from NUHS.
+      - link [ref=f8e86] [cursor=pointer]:
+        - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+        - text: Subscribe
+        - strong [ref=f8e87]: now
+  - contentinfo [ref=f8e88]:
+    - text: 
+    - generic [ref=f8e91]:
+      - generic [ref=f8e92]:
+        - link [ref=f8e94] [cursor=pointer]:
+          - /url: https://www.nuhs.edu.sg/Pages/Home.aspx
+          - img "White NUHS Logo" [ref=f8e95]
+        - generic [ref=f8e96]:
+          - list [ref=f8e98]:
+            - listitem [ref=f8e99]:
+              - link "National University Hospital" [ref=f8e100] [cursor=pointer]:
+                - /url: https://www.nuh.com.sg/Pages/Home.aspx
+            - listitem [ref=f8e101]:
+              - link "Ng Teng Fong General Hospital" [ref=f8e102] [cursor=pointer]:
+                - /url: https://www.ntfgh.com.sg/Pages/default.aspx
+            - listitem [ref=f8e103]:
+              - link "Alexandra Hospital" [ref=f8e104] [cursor=pointer]:
+                - /url: https://www.ah.com.sg/Pages/Home.aspx
+            - listitem [ref=f8e105]:
+              - link "Jurong Community Hospital" [ref=f8e106] [cursor=pointer]:
+                - /url: https://www.jch.com.sg/Pages/default.aspx
+            - listitem [ref=f8e107]:
+              - link "National University Polyclinics" [ref=f8e108] [cursor=pointer]:
+                - /url: https://www.nup.com.sg/
+          - list [ref=f8e110]:
+            - listitem [ref=f8e111]:
+              - link "Jurong Medical Centre" [ref=f8e112] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Care-in-the-Community/JMC/Pages/default.aspx
+            - listitem [ref=f8e113]:
+              - link "National University Cancer Institute Singapore" [ref=f8e114] [cursor=pointer]:
+                - /url: https://www.ncis.com.sg/Pages/Home.aspx
+            - listitem [ref=f8e115]:
+              - link "National University Heart Centre Singapore" [ref=f8e116] [cursor=pointer]:
+                - /url: https://www.nuhcs.com.sg/Pages/default.aspx
+            - listitem [ref=f8e117]:
+              - link "National University Centre for Oral Health Singapore" [ref=f8e118] [cursor=pointer]:
+                - /url: https://www.nucohs.com.sg/Pages/home.aspx
+            - listitem [ref=f8e119]:
+              - link "NUHS Diagnostics" [ref=f8e120] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Diagnostics/Pages/default.aspx
+          - list [ref=f8e122]:
+            - listitem [ref=f8e123]:
+              - link "NUHS Pharmacy" [ref=f8e124] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Pharmacy/Pages/default.aspx
+            - listitem [ref=f8e125]:
+              - link "National University of Singapore - Yong Loo Lin School of Medicine" [ref=f8e126] [cursor=pointer]:
+                - /url: https://medicine.nus.edu.sg/
+            - listitem [ref=f8e127]:
+              - link "National University of Singapore - Faculty of Dentistry" [ref=f8e128] [cursor=pointer]:
+                - /url: http://www.dentistry.nus.edu.sg/
+            - listitem [ref=f8e129]:
+              - link "National University of Singapore - Saw Swee Hock School of Public Health" [ref=f8e130] [cursor=pointer]:
+                - /url: https://sph.nus.edu.sg/
+      - generic [ref=f8e131]:
+        - generic [ref=f8e133]:
+          - list [ref=f8e134]:
+            - listitem [ref=f8e135]:
+              - link "About NUHS" [ref=f8e136] [cursor=pointer]:
+                - /url: /about-us/nuhs
+            - listitem [ref=f8e137]:
+              - link "Terms of Use" [ref=f8e138] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Pages/terms-of-use.aspx
+          - list [ref=f8e139]:
+            - listitem [ref=f8e140]:
+              - link "linkedin" [ref=f8e141] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/national-university-health-system
+                - generic [ref=f8e142]: 
+            - listitem [ref=f8e143]:
+              - link "facebook" [ref=f8e144] [cursor=pointer]:
+                - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                - generic [ref=f8e145]: 
+            - listitem [ref=f8e146]:
+              - link "instagram" [ref=f8e147] [cursor=pointer]:
+                - /url: https://www.instagram.com/nuhsofficial
+                - generic [ref=f8e148]: 
+            - listitem [ref=f8e149]:
+              - link "tiktok" [ref=f8e150] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@nuhsofficial
+                - generic [ref=f8e151]: 
+            - listitem [ref=f8e152]:
+              - link "facebook" [ref=f8e153] [cursor=pointer]:
+                - /url: https://t.me/nuhsofficial
+                - generic [ref=f8e154]: 
+        - paragraph [ref=f8e156]: © 2026 National University Health System

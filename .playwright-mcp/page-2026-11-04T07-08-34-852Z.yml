@@ -1,0 +1,317 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /home
+          - img "NUHS Logo" [ref=e9]
+        - generic [ref=e10]:
+          - generic [ref=e14]:
+            - generic [ref=e15]:
+              - generic [ref=e16] [cursor=pointer]: A
+              - generic [ref=e17] [cursor=pointer]
+              - generic [ref=e18] [cursor=pointer]: A
+            - list [ref=e20]:
+              - listitem [ref=e21]:
+                - link "facebook" [ref=e22] [cursor=pointer]:
+                  - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                  - generic [ref=e23]: 
+              - listitem [ref=e24]:
+                - link "instagram" [ref=e25] [cursor=pointer]:
+                  - /url: https://www.instagram.com/nuhsofficial
+                  - generic [ref=e26]: 
+              - listitem [ref=e27]:
+                - link "linkedin" [ref=e28] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/national-university-health-system
+                  - generic [ref=e29]: 
+            - link [ref=e31] [cursor=pointer]:
+              - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+              - text: Subscribe
+              - strong [ref=e32]: now
+          - button "search toggler" [active] [ref=e33] [cursor=pointer]
+      - textbox "I want to know about..." [ref=e36]
+    - navigation [ref=e40]:
+      - list [ref=e41]:
+        - listitem [ref=e42]:
+          - link "NEWS" [ref=e43] [cursor=pointer]:
+            - /url: /home#news
+        - listitem [ref=e44]:
+          - link "LIFESTYLE" [ref=e45] [cursor=pointer]:
+            - /url: /home#lifestyle
+        - listitem [ref=e46]:
+          - link "SCIENCE" [ref=e47] [cursor=pointer]:
+            - /url: /home#science
+        - listitem [ref=e48]:
+          - link "PEOPLE" [ref=e49] [cursor=pointer]:
+            - /url: /home#people
+        - listitem [ref=e50]:
+          - link "MULTIMEDIA" [ref=e51] [cursor=pointer]:
+            - /url: /home#multimedia
+        - listitem [ref=e52]:
+          - link "MEDIPEDIA" [ref=e53] [cursor=pointer]:
+            - /url: /medipedia
+        - listitem [ref=e54]:
+          - generic [ref=e55] [cursor=pointer]: ABOUT US
+          - text: 
+  - main [ref=e56]:
+    - generic [ref=e59]:
+      - button "Previous" [ref=e60] [cursor=pointer]: Previous
+      - generic [ref=e62]:
+        - link [ref=e281] [cursor=pointer]:
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - generic [ref=e284]:
+            - generic [ref=e285]: People
+            - paragraph [ref=e286]: "Care beyond borders: a journey far from home"
+            - generic [ref=e287]: 
+        - link [ref=e401] [cursor=pointer]:
+          - /url: /article/when-eye-problems-are-more-than-they-seem
+          - generic [ref=e291]:
+            - generic [ref=e292]: Lifestyle
+            - generic [ref=e293]: People
+            - generic [ref=e294]: Medipedia
+            - paragraph [ref=e295]: When eye problems are more than they seem
+            - generic [ref=e296]: 
+        - link [ref=e297] [cursor=pointer]:
+          - /url: /stories/care-beyond-borders-a-journey-far-from-home
+          - generic [ref=e300]:
+            - generic [ref=e301]: People
+            - paragraph [ref=e302]: "Care beyond borders: a journey far from home"
+            - generic [ref=e303]: 
+        - link [ref=e304] [cursor=pointer]:
+          - /url: /article/what-your-phone-picks-up-behind-closed-doors
+          - generic [ref=e307]:
+            - generic [ref=e308]: Lifestyle
+            - generic [ref=e309]: People
+            - paragraph [ref=e310]: What your phone picks up behind closed doors
+            - generic [ref=e311]: 
+        - link [ref=e312] [cursor=pointer]:
+          - /url: /stories/photo-story-title-test-october-2026
+          - generic [ref=e315]:
+            - generic [ref=e316]: Multimedia
+            - generic [ref=e317]: News
+            - generic [ref=e318]: Science
+            - paragraph [ref=e319]: Photo Story Title
+            - generic [ref=e320]: 
+        - 'link "Care beyond borders: a journey far from home People Care beyond borders: a journey far from home " [ref=e403] [cursor=pointer]':
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - 'img "Care beyond borders: a journey far from home" [ref=e404]'
+          - generic [ref=e324]:
+            - generic [ref=e325]: People
+            - paragraph [ref=e326]: "Care beyond borders: a journey far from home"
+            - generic [ref=e327]: 
+        - link [ref=e328] [cursor=pointer]:
+          - /url: /article/when-eye-problems-are-more-than-they-seem
+          - generic [ref=e331]:
+            - generic [ref=e332]: Lifestyle
+            - generic [ref=e333]: People
+            - generic [ref=e334]: Medipedia
+            - paragraph [ref=e335]: When eye problems are more than they seem
+            - generic [ref=e336]: 
+        - link [ref=e337] [cursor=pointer]:
+          - /url: /stories/care-beyond-borders-a-journey-far-from-home
+          - generic [ref=e340]:
+            - generic [ref=e341]: People
+            - paragraph [ref=e342]: "Care beyond borders: a journey far from home"
+            - generic [ref=e343]: 
+        - link [ref=e344] [cursor=pointer]:
+          - /url: /article/what-your-phone-picks-up-behind-closed-doors
+          - generic [ref=e347]:
+            - generic [ref=e348]: Lifestyle
+            - generic [ref=e349]: People
+            - paragraph [ref=e350]: What your phone picks up behind closed doors
+            - generic [ref=e351]: 
+        - link [ref=e352] [cursor=pointer]:
+          - /url: /stories/photo-story-title-test-october-2026
+          - generic [ref=e355]:
+            - generic [ref=e356]: Multimedia
+            - generic [ref=e357]: News
+            - generic [ref=e358]: Science
+            - paragraph [ref=e359]: Photo Story Title
+            - generic [ref=e360]: 
+        - link [ref=e361] [cursor=pointer]:
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - generic [ref=e364]:
+            - generic [ref=e365]: People
+            - paragraph [ref=e366]: "Care beyond borders: a journey far from home"
+            - generic [ref=e367]: 
+      - button "Next" [ref=e85] [cursor=pointer]: Next
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - link "Article Title News Science People Article Title " [ref=e90] [cursor=pointer]:
+          - /url: /article/article-title-test-october-2026
+          - img "Article Title" [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e94]: News
+            - generic [ref=e95]: Science
+            - generic [ref=e96]: People
+            - paragraph [ref=e97]: Article Title
+            - text: 
+            - generic [ref=e98]: 
+        - link "Article Title News Science People Article Title " [ref=e100] [cursor=pointer]:
+          - /url: /article/article-title
+          - img "Article Title" [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]: News
+            - generic [ref=e105]: Science
+            - generic [ref=e106]: People
+            - paragraph [ref=e107]: Article Title
+            - text: 
+            - generic [ref=e108]: 
+      - generic [ref=e110]:
+        - link "A new role for AI in speech rehabilitation Science A new role for AI in speech rehabilitation  Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care." [ref=e112] [cursor=pointer]:
+          - /url: /article/a-new-role-for-ai-in-speech-rehabilitation
+          - img "A new role for AI in speech rehabilitation" [ref=e114]
+          - generic [ref=e115]:
+            - generic [ref=e116]: Science
+            - paragraph [ref=e117]: A new role for AI in speech rehabilitation
+            - generic [ref=e118]: 
+            - paragraph [ref=e119]: Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care.
+        - link "Test - When does recovery start? Multimedia News Science Test - When does recovery start?  Test - – Earlier than we thought. For patients undergoing total knee replacement, recovery began before surgery itself and led to a 67 per cent shorter hospital stay." [ref=e121] [cursor=pointer]:
+          - /url: /stories/test---when-does--recovery-start
+          - img "Test - When does recovery start?" [ref=e123]
+          - generic [ref=e124]:
+            - generic [ref=e125]: Multimedia
+            - generic [ref=e126]: News
+            - generic [ref=e127]: Science
+            - paragraph [ref=e128]: Test - When does recovery start?
+            - generic [ref=e129]: 
+            - paragraph [ref=e130]: Test - – Earlier than we thought. For patients undergoing total knee replacement, recovery began before surgery itself and led to a 67 per cent shorter hospital stay.
+        - link "Test - What are we not seeing? Multimedia News Science Test - What are we not seeing?  This is to test the standfirst" [ref=e132] [cursor=pointer]:
+          - /url: /stories/test---what-are-we-not-seeing
+          - img "Test - What are we not seeing?" [ref=e134]
+          - generic [ref=e135]:
+            - generic [ref=e136]: Multimedia
+            - generic [ref=e137]: News
+            - generic [ref=e138]: Science
+            - paragraph [ref=e139]: Test - What are we not seeing?
+            - generic [ref=e140]: 
+            - paragraph [ref=e141]: This is to test the standfirst
+        - button "LOAD MORE" [ref=e143] [cursor=pointer]
+    - generic [ref=e147]:
+      - link [ref=e149] [cursor=pointer]:
+        - /url: /generalSearch/?keyword=podcast
+        - heading "Podcast" [level=2] [ref=e150]
+      - generic [ref=e151]:
+        - button [disabled] [ref=e152]:
+          - emphasis [ref=e153]: 
+        - button [ref=e154] [cursor=pointer]:
+          - emphasis [ref=e155]: 
+      - generic [ref=e159]:
+        - link [ref=e368] [cursor=pointer]:
+          - /url: /article/beyond-bedside-how-nursing-roles-are-evolving-at-nuhs
+          - 'img "Beyond bedside: How nursing roles are evolving at NUHS" [ref=e370]'
+          - paragraph [ref=e372]: "Beyond bedside: How nursing roles are evolving at NUHS"
+        - link [ref=e373] [cursor=pointer]:
+          - /url: /article/testing-only
+          - img "Testing only" [ref=e375]
+          - paragraph [ref=e377]: Testing only
+        - link [ref=e378] [cursor=pointer]:
+          - /url: /article/zoom-fatigue-how-to-dial-back
+          - 'img "Zoom fatigue: How to dial back" [ref=e380]'
+          - paragraph [ref=e382]: "Zoom fatigue: How to dial back"
+        - link [ref=e383] [cursor=pointer]:
+          - /url: /article/dna-detectives-hunting-down-hidden-hospital-bacteria
+          - paragraph [ref=e387]: "DNA detectives: Hunting down hidden hospital bacteria"
+        - link [ref=e388] [cursor=pointer]:
+          - /url: /stories/can-better-recovery-begin-before-surgery
+          - paragraph [ref=e390]: When does recovery start?
+        - link [ref=e391] [cursor=pointer]:
+          - /url: /stories/nuhs-avbc-are-we-asking-the-right-questions
+          - paragraph [ref=e393]: Are we asking the right questions?
+        - link [ref=e394] [cursor=pointer]:
+          - /url: /stories/why-are-we-still-admitting-them
+          - paragraph [ref=e396]: Where should recovery happen?
+        - link [ref=e397] [cursor=pointer]:
+          - /url: /stories/the-goal-behind-the-goal
+          - paragraph [ref=e399]: Who is the goal really for?
+    - generic [ref=e207]:
+      - paragraph [ref=e208]: Stay informed
+      - paragraph [ref=e209]: on the latest health, science and patient stories from NUHS.
+      - link [ref=e210] [cursor=pointer]:
+        - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+        - text: Subscribe
+        - strong [ref=e211]: now
+  - contentinfo [ref=e212]:
+    - text: 
+    - generic [ref=e215]:
+      - generic [ref=e216]:
+        - link [ref=e218] [cursor=pointer]:
+          - /url: https://www.nuhs.edu.sg/Pages/Home.aspx
+          - img "White NUHS Logo" [ref=e219]
+        - generic [ref=e220]:
+          - list [ref=e222]:
+            - listitem [ref=e223]:
+              - link "National University Hospital" [ref=e224] [cursor=pointer]:
+                - /url: https://www.nuh.com.sg/Pages/Home.aspx
+            - listitem [ref=e225]:
+              - link "Ng Teng Fong General Hospital" [ref=e226] [cursor=pointer]:
+                - /url: https://www.ntfgh.com.sg/Pages/default.aspx
+            - listitem [ref=e227]:
+              - link "Alexandra Hospital" [ref=e228] [cursor=pointer]:
+                - /url: https://www.ah.com.sg/Pages/Home.aspx
+            - listitem [ref=e229]:
+              - link "Jurong Community Hospital" [ref=e230] [cursor=pointer]:
+                - /url: https://www.jch.com.sg/Pages/default.aspx
+            - listitem [ref=e231]:
+              - link "National University Polyclinics" [ref=e232] [cursor=pointer]:
+                - /url: https://www.nup.com.sg/
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - link "Jurong Medical Centre" [ref=e236] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Care-in-the-Community/JMC/Pages/default.aspx
+            - listitem [ref=e237]:
+              - link "National University Cancer Institute Singapore" [ref=e238] [cursor=pointer]:
+                - /url: https://www.ncis.com.sg/Pages/Home.aspx
+            - listitem [ref=e239]:
+              - link "National University Heart Centre Singapore" [ref=e240] [cursor=pointer]:
+                - /url: https://www.nuhcs.com.sg/Pages/default.aspx
+            - listitem [ref=e241]:
+              - link "National University Centre for Oral Health Singapore" [ref=e242] [cursor=pointer]:
+                - /url: https://www.nucohs.com.sg/Pages/home.aspx
+            - listitem [ref=e243]:
+              - link "NUHS Diagnostics" [ref=e244] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Diagnostics/Pages/default.aspx
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - link "NUHS Pharmacy" [ref=e248] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Pharmacy/Pages/default.aspx
+            - listitem [ref=e249]:
+              - link "National University of Singapore - Yong Loo Lin School of Medicine" [ref=e250] [cursor=pointer]:
+                - /url: https://medicine.nus.edu.sg/
+            - listitem [ref=e251]:
+              - link "National University of Singapore - Faculty of Dentistry" [ref=e252] [cursor=pointer]:
+                - /url: http://www.dentistry.nus.edu.sg/
+            - listitem [ref=e253]:
+              - link "National University of Singapore - Saw Swee Hock School of Public Health" [ref=e254] [cursor=pointer]:
+                - /url: https://sph.nus.edu.sg/
+      - generic [ref=e255]:
+        - generic [ref=e257]:
+          - list [ref=e258]:
+            - listitem [ref=e259]:
+              - link "About NUHS" [ref=e260] [cursor=pointer]:
+                - /url: /about-us/nuhs
+            - listitem [ref=e261]:
+              - link "Terms of Use" [ref=e262] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Pages/terms-of-use.aspx
+          - list [ref=e263]:
+            - listitem [ref=e264]:
+              - link "linkedin" [ref=e265] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/national-university-health-system
+                - generic [ref=e266]: 
+            - listitem [ref=e267]:
+              - link "facebook" [ref=e268] [cursor=pointer]:
+                - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                - generic [ref=e269]: 
+            - listitem [ref=e270]:
+              - link "instagram" [ref=e271] [cursor=pointer]:
+                - /url: https://www.instagram.com/nuhsofficial
+                - generic [ref=e272]: 
+            - listitem [ref=e273]:
+              - link "tiktok" [ref=e274] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@nuhsofficial
+                - generic [ref=e275]: 
+            - listitem [ref=e276]:
+              - link "facebook" [ref=e277] [cursor=pointer]:
+                - /url: https://t.me/nuhsofficial
+                - generic [ref=e278]: 
+        - paragraph [ref=e280]: © 2026 National University Health System

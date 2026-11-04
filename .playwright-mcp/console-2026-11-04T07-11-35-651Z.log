@@ -1,0 +1,5 @@
+[     130ms] TypeError: Cannot read properties of undefined (reading 'Constructor')
+    at https://websparks-stg.sitefinity.cloud/assets/js/bootstrap-select.min.js:8:51210
+    at https://websparks-stg.sitefinity.cloud/assets/js/bootstrap-select.min.js:8:51954
+    at https://websparks-stg.sitefinity.cloud/assets/js/bootstrap-select.min.js:8:214
+    at https://websparks-stg.sitefinity.cloud/assets/js/bootstrap-select.min.js:8:226

@@ -1114,7 +1114,7 @@ Additional screenshots should represent meaningful business outcomes rather than
 
 Examples:
 
-Text Resizer
+Font Size Changer
 
 - Small Validation
 - Medium Validation
@@ -1199,7 +1199,7 @@ Additional screenshots should represent meaningful business states rather than i
 
 Examples:
 
-Text Resizer
+Font Size Changer
 
 - T1a-Default-State.png
 - T1b-Small-Validation.png
