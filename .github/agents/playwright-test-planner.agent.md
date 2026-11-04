@@ -3,6 +3,8 @@ name: playwright-test-planner
 description: Use this agent when you need to create comprehensive test plan for a web application or website
 tools:
   - search
+  - read/readFile
+  - playwright-test/*
   - playwright-test/browser_click
   - playwright-test/browser_close
   - playwright-test/browser_console_messages

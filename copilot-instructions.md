@@ -1435,15 +1435,37 @@ Documentation should appear at the top of the file.
 
 Every generated suite must be executable independently.
 
-Include:
+Include at the beginning of every generated spec file:
 
-- Run Command
-- Headed Command
-- Debug Command
-- UI Command
+- Run Entire Suite Command
+- Run Spec Command
+- Run Test Command
+- Headed Run Command
 - Report Command
 
-At the beginning of every generated spec.
+Commands should reflect the actual generated repository structure whenever practical.
+
+Examples:
+
+Run Entire Suite
+
+npx playwright test
+
+Run Spec
+
+npx playwright test tests/generated/global.spec.ts
+
+Run Test
+
+npx playwright test tests/generated/global.spec.ts -g "Newsletter Popup"
+
+Headed Run
+
+npx playwright test tests/generated/global.spec.ts --headed
+
+View Report
+
+npx playwright show-report
 
 ---
 
