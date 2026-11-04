@@ -307,20 +307,27 @@ Document observed behaviors and validation scenarios.
 
 ## Popup Persistence Requirements
 
-When popup functionality exists analyze:
+Discovery should not continue while a blocking popup remains visible.
 
-- Initial appearance
-- Dismissal behavior
-- Persistence after dismissal
-- Navigation after dismissal
-- Refresh behavior
-- Browser storage behavior
+When a popup appears:
 
-When practical determine:
+1. Record the popup behaviour.
+2. Capture required evidence.
+3. Dismiss the popup.
+4. Verify the popup is closed.
+5. Continue discovery.
 
-- Cookie persistence
-- Local storage persistence
-- Session storage persistence
+Do not continue:
+
+- Scrolling
+- Navigation
+- Link exploration
+- Search discovery
+- Content discovery
+
+while the popup remains visible.
+
+Popup dismissal takes precedence over continued discovery.
 
 ### Newsletter Popup
 
@@ -419,36 +426,25 @@ When text resizing functionality exists analyze:
 - User-visible size changes
 - State persistence when applicable
 
-Expected behaviour:
+Expected Behaviour
 
 - Small decreases text size.
 - Medium restores the default text size.
 - Large increases text size.
 
+Validation should follow this sequence:
+
+1. Record the default size.
+2. Select Small and verify the text is smaller than the default size.
+3. Select Medium and verify the text returns to the default size.
+4. Select Large and verify the text is larger than the default size.
+
 Validation should focus on:
 
 - Available controls
 - Active control state
-- Relative font size changes
+- Relative size changes
 - User-visible behaviour
-
-Prefer validating behaviour through control state and relative size comparisons.
-
-Examples:
-
-- Small is smaller than the default size.
-- Medium restores the default size.
-- Large is larger than the default size.
-
-Do not rely on exact computed font-size values.
-
-Do not generate validations using exact pixel values such as:
-
-- 14.72px
-- 14.7188px
-- 18.88px
-
-Browser rendering may vary across browsers, devices, operating systems, zoom settings, and rendering engines.
 
 Prefer validating:
 
@@ -459,8 +455,6 @@ Prefer validating:
 rather than exact numeric values.
 
 Generate validations based on observed business behaviour rather than implementation details whenever practical.
-
-Prefer validating what the user experiences instead of validating internal CSS values.
 
 ---
 

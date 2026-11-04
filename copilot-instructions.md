@@ -220,6 +220,42 @@ These examples are not exhaustive.
 
 Discovery must be based on actual website behavior.
 
+Shared components should be discovered, documented, and validated once during a discovery session unless additional validation is explicitly required.
+
+After a shared component has been identified and documented:
+
+- Continue discovery.
+- Prioritise discovering new functionality.
+- Avoid repeatedly revisiting identical behaviour.
+
+Examples include:
+
+- Newsletter Popup
+- Cookie Banner
+- Accessibility Controls
+- Header
+- Footer
+- Social Media Links
+- Subscribe Widgets
+- Scroll-To-Top
+
+When a shared component appears on multiple pages:
+
+- Document the behaviour.
+- Record page-specific differences when present.
+- Avoid repeatedly validating identical behaviour across pages.
+
+Discovery should prioritise uncovering new functionality over re-validating previously documented shared functionality.
+
+If a shared component blocks discovery:
+
+- Document the behaviour.
+- Capture required evidence.
+- Dismiss or complete the interaction.
+- Continue discovery.
+
+Avoid remaining on the same page solely to repeatedly validate the same shared component.
+
 ---
 
 ## Coverage Ownership Strategy
@@ -582,6 +618,14 @@ Do not continue:
 - Validation discovery
 
 while a blocking popup, modal, overlay, newsletter prompt, or cookie prompt remains visible.
+
+Once popup behaviour has been documented and validated, continue discovery.
+
+Do not repeatedly trigger and revalidate the same popup during the same discovery session unless persistence behaviour is being analysed.
+
+Popup dismissal takes precedence over continued discovery when the popup blocks interaction.
+
+Discovery should prioritise discovering new functionality rather than repeatedly validating previously documented popup behaviour.
 
 ---
 
@@ -998,6 +1042,43 @@ Generate the minimum evidence necessary to support:
 - Troubleshooting
 - Failure Analysis
 
+Evidence requirements should be determined by workflow type.
+
+State-Based Validation
+
+Capture evidence for significant validation states.
+
+Examples:
+
+- Small Validation
+- Medium Validation
+- Large Validation
+- Theme Validation
+- Language Validation
+- Accessibility Validation
+
+Workflow-Based Validation
+
+Capture evidence for meaningful workflow progression.
+
+Examples:
+
+- Popup Appears
+- Popup Dismissed
+- Persistence Validation
+
+- Header Visible
+- Footer Visible
+- Returned To Top
+
+- Search Executed
+- Results Displayed
+- Result Navigation
+
+Do not automatically apply the same evidence pattern to every workflow.
+
+Prefer evidence that demonstrates business outcomes rather than framework-driven stages.
+
 ---
 
 ### Workflow Evidence Strategy
@@ -1069,6 +1150,10 @@ A reviewer should be able to understand:
 - Whether validation succeeded
 
 From the associated evidence and report attachments.
+
+During discovery, avoid repeatedly validating the same component when its behaviour has already been captured.
+
+Shared components should be documented once and reused within planning unless behaviour changes are observed.
 
 ---
 
