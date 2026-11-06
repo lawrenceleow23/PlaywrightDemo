@@ -73,12 +73,23 @@ Validation Scenarios
 
 ### Blocker Rule
 
+Before starting the Homepage workflow, scroll to the bottom to trigger the
+blocking popup. Treat this as setup, not popup coverage. If a popup appears
+while scrolling, pause and dismiss it before continuing. If it does not
+appear, continue without assuming it must.
+
+After dismissing any popup, verify it is hidden and return to the top.
+Verify the expected initial content state before starting the workflow; if
+scrolling changed that state, report the limitation.
+
 If a blocking popup or overlay appears:
 
 - Stop the current interaction.
 - Dismiss it using its close or dismiss control.
 - Verify it is closed.
 - Resume the interrupted in-scope step.
+- Check again for a blocking popup before capturing evidence or when an
+  interaction is obstructed.
 - Do not analyze, test, or document the popup, persistence, cookies, or
   storage.
 - Do not create popup coverage scenarios.

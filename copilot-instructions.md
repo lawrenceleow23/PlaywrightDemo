@@ -1755,6 +1755,24 @@ Before completing generation:
 
 ---
 
+### Failure Screenshot Helper
+
+When creating or updating a failure-screenshot helper:
+
+- Save screenshots under `testInfo.outputPath(...)`. Do not construct paths
+  by traversing to parent directories with `..`.
+- Sanitize test titles before using them as path segments, or avoid using
+  titles in the path.
+- Create the destination directory before saving the screenshot.
+- Attach the saved image to the originating test with `testInfo.attach`.
+- Check whether the page is still open before capturing. If it is closed,
+  report that the screenshot could not be captured; do not silently ignore
+  the failure.
+- Use the existing helper and project conventions where possible. Verify
+  the helper compiles and its imports resolve.
+  
+---
+
 ## AI Healer Support
 
 Generated evidence should support automated failure analysis.
