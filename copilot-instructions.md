@@ -1190,6 +1190,21 @@ When no compatible Lighthouse setup exists:
 - Provide commands using the actual configuration and spec paths to list and
   run the Lighthouse suite and view its reports.
 
+Define and export Lighthouse score thresholds in
+`playwright.lighthouse.config.ts`. Reuse the existing file or create it
+as part of the Lighthouse setup; do not create a separate threshold
+configuration file.
+
+Apply the defaults from Lighthouse Threshold Strategy unless project
+requirements specify different targets. The audit helper or tests must
+import and use the exported values. Do not define conflicting thresholds
+inside individual tests or add unsupported properties to the Playwright
+configuration object.
+
+Verify that the configuration imports correctly and that a score below a
+configured threshold fails the audit. If verification is blocked, report
+the reason.
+
 Validate the generated setup by listing the intended tests and running the
 audit when the environment and site are accessible. Report setup failures,
 inaccessible pages, and failed audits explicitly. Do not claim the setup is
@@ -1700,6 +1715,14 @@ Screenshot capture, report attachments, and failure evidence must be
 implemented in reusable helpers and shared across generated suites. Do not
 define duplicate implementations of these functions inside individual specs.
 
+Centralize reusable evidence functions and the Playwright evidence fixture
+in the project's existing helper module when practical. Do not create a
+separate evidence file solely for those functions.
+
+Preserve the fixture's automatic lifecycle. Specs using automatic diagnostics
+and failure evidence must import the exported test fixture. Avoid circular
+imports and verify existing consumers after consolidation.
+
 When multiple specs need the same workflow support, such as dismissing a
 blocking overlay, implement it once in a reusable helper. Follow the
 popup rules in the plan; a dismiss helper must not introduce out-of-scope
@@ -1812,7 +1835,9 @@ Include at the beginning of every generated spec file:
 - Headed Run Command
 - Report Command
 
-Commands should reflect the actual generated repository structure whenever practical.
+Include these commands as comments at the top of every generated or updated
+spec file. Use the actual spec path, Playwright configuration, project
+options, and test name. Verify the commands match the repository structure.
 
 Examples:
 
