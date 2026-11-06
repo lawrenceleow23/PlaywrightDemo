@@ -1,0 +1,328 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link [ref=f1e8] [cursor=pointer]:
+          - /url: /home
+          - img "NUHS Logo" [ref=f1e9]
+        - generic [ref=f1e10]:
+          - generic [ref=f1e14]:
+            - generic [ref=f1e15]:
+              - generic [ref=f1e16] [cursor=pointer]: A
+              - generic [ref=f1e17] [cursor=pointer]
+              - generic [ref=f1e18] [cursor=pointer]: A
+            - list [ref=f1e20]:
+              - listitem [ref=f1e21]:
+                - link "facebook" [ref=f1e22] [cursor=pointer]:
+                  - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                  - generic [ref=f1e23]: 
+              - listitem [ref=f1e24]:
+                - link "instagram" [ref=f1e25] [cursor=pointer]:
+                  - /url: https://www.instagram.com/nuhsofficial
+                  - generic [ref=f1e26]: 
+              - listitem [ref=f1e27]:
+                - link "linkedin" [ref=f1e28] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/national-university-health-system
+                  - generic [ref=f1e29]: 
+            - link [ref=f1e31] [cursor=pointer]:
+              - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+              - text: Subscribe
+              - strong [ref=f1e32]: now
+          - button "search toggler" [ref=f1e33] [cursor=pointer]
+      - textbox "I want to know about..." [ref=f1e36]
+    - navigation [ref=f1e40]:
+      - list [ref=f1e41]:
+        - listitem [ref=f1e42]:
+          - link "NEWS" [ref=f1e43] [cursor=pointer]:
+            - /url: /home#news
+        - listitem [ref=f1e44]:
+          - link "LIFESTYLE" [ref=f1e45] [cursor=pointer]:
+            - /url: /home#lifestyle
+        - listitem [ref=f1e46]:
+          - link "SCIENCE" [ref=f1e47] [cursor=pointer]:
+            - /url: /home#science
+        - listitem [ref=f1e48]:
+          - link "PEOPLE" [ref=f1e49] [cursor=pointer]:
+            - /url: /home#people
+        - listitem [ref=f1e50]:
+          - link "MULTIMEDIA" [ref=f1e51] [cursor=pointer]:
+            - /url: /home#multimedia
+        - listitem [ref=f1e52]:
+          - link "MEDIPEDIA" [ref=f1e53] [cursor=pointer]:
+            - /url: /medipedia
+        - listitem [ref=f1e54]:
+          - generic [ref=f1e55] [cursor=pointer]: ABOUT US
+          - text: 
+  - main [ref=f1e56]:
+    - generic [ref=f1e59]:
+      - img "A new role for AI in speech rehabilitation" [ref=f1e61]
+      - generic [ref=f1e62]:
+        - generic [ref=f1e63]: Science
+        - heading "A new role for AI in speech rehabilitation" [level=1] [ref=f1e64]
+        - generic [ref=f1e65]: 
+    - generic [ref=f1e68]:
+      - generic [ref=f1e69]:
+        - generic [ref=f1e70]: SHARE
+        - list [ref=f1e71]:
+          - listitem [ref=f1e72]:
+            - link "share on facebook" [ref=f1e73] [cursor=pointer]:
+              - /url: https://www.facebook.com/sharer.php?u=https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation
+              - generic [ref=f1e74]: 
+          - listitem [ref=f1e75]:
+            - link "share on linkedin" [ref=f1e76] [cursor=pointer]:
+              - /url: https://www.linkedin.com/shareArticle?url=https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation&mini=true&title=A new role for AI in speech rehabilitation | NUHS+
+              - generic [ref=f1e77]: 
+          - listitem [ref=f1e78]:
+            - link "share on twitter" [ref=f1e79] [cursor=pointer]:
+              - /url: https://twitter.com/intent/tweet?url=https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation&text=A%20new%20role%20for%20AI%20in%20speech%20rehabilitation%20%7C%20NUHS+
+              - generic [ref=f1e80]: 
+          - listitem [ref=f1e81]:
+            - link "share to whatsapp" [ref=f1e82] [cursor=pointer]:
+              - /url: https://api.whatsapp.com/send?text=A new role for AI in speech rehabilitation | NUHS+ - https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation
+              - generic [ref=f1e83]: 
+          - listitem [ref=f1e84]:
+            - link "share to telegram" [ref=f1e85] [cursor=pointer]:
+              - /url: https://t.me/share/url?url=https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation&text=A new role for AI in speech rehabilitation | NUHS+
+              - generic [ref=f1e86]: 
+          - listitem [ref=f1e87]:
+            - link "send as email" [ref=f1e88] [cursor=pointer]:
+              - /url: mailto:?subject=A new role for AI in speech rehabilitation | NUHS+&body=https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation
+              - generic [ref=f1e89]: 
+          - listitem [ref=f1e90]:
+            - link "send as text message" [ref=f1e91] [cursor=pointer]:
+              - /url: sms:?&body=A new role for AI in speech rehabilitation | NUHS+ - https://websparks-stg.sitefinity.cloud/article/a-new-role-for-ai-in-speech-rehabilitation
+              - generic [ref=f1e92]: 
+        - generic [ref=f1e93]: DOWNLOAD
+        - link "download" [ref=f1e95] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=f1e96]: 
+      - generic [ref=f1e97]:
+        - paragraph [ref=f1e98]: Published on 2 October 2026
+        - paragraph [ref=f1e99]:
+          - strong [ref=f1e100]:
+            - emphasis [ref=f1e101]: Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care.
+        - paragraph [ref=f1e102]: Between therapy sessions, patients practising speech exercises at home may be unsure whether they are using the techniques correctly.
+        - paragraph [ref=f1e103]:
+          - text: AISay, an artificial intelligence (AI) app being developed by the
+          - link "National University Health System (NUHS)" [ref=f1e104] [cursor=pointer]:
+            - /url: https://www.nuhs.edu.sg/
+          - text: ", in collaboration with Synapxe, aims to bridge this gap by providing feedback during independent practice and recording patients’ progress for therapists to review."
+        - paragraph [ref=f1e105]: Designed for people with dysarthria, a condition that can occur after a stroke and affect speech clarity, AISay could help extend rehabilitation beyond scheduled appointments. This gives patients more opportunities to practise while keeping therapists connected to their progress.
+        - paragraph [ref=f1e106]:
+          - text: For
+          - link "Dr Elvina Tay" [ref=f1e107] [cursor=pointer]:
+            - /url: https://www.nuhs.edu.sg/patient-care/find-a-doctor/doctor-details/Elvina_Tay
+          - text: ", Consultant, Department of Post-Acute & Continuing Care,"
+          - link "Jurong Community Hospital (JCH)" [ref=f1e108] [cursor=pointer]:
+            - /url: https://www.jch.com.sg/
+          - text: ", this support could begin even before patients return home. AISay can help patients make use of time outside scheduled therapy sessions for additional practice in hospital, and continue that practice after discharge."
+        - heading "Building speech habits through practice" [level=2] [ref=f1e109]
+        - paragraph [ref=f1e110]:
+          - text: For speech exercises to be effective, patients need to apply the techniques introduced by their therapist. “Dysarthria rehab is essentially about forming new habits in response to unclear speech,” explained Mr Jarrod Lee, Speech Therapist,
+          - link "Ng Teng Fong General Hospital (NTFGH)" [ref=f1e111] [cursor=pointer]:
+            - /url: https://www.ntfgh.com.sg/
+          - text: .
+        - paragraph [ref=f1e112]: For instance, someone working on clearer pronunciation may focus only on slowing down. Without feedback on how they are forming the words, repeated practice may reinforce an approach that does not address the difficulty being targeted.
+        - img [ref=f1e113]:
+          - generic [ref=f1e114]: “Without timely feedback, it can be difficult to know whether they are doing the exercises correctly. As a result, practice often becomes less frequent or less structured.”
+          - generic [ref=f1e115]: – Dr Elvina Tay
+        - paragraph [ref=f1e122]: AISay is designed to provide guidance at these points of uncertainty. In its early version, patients say a sentence aloud and receive simple feedback to guide their next attempt. Their practice and progress are also recorded for their therapist to review.
+        - heading "Connecting practice at home with care" [level=2] [ref=f1e123]
+        - paragraph [ref=f1e124]: The information collected between appointments could give therapists a clearer picture of how patients are practising in their daily lives.
+        - paragraph [ref=f1e125]: Thereafter, therapists can review practice frequency and duration, the feedback provided by AISay, speech recordings and progress reports. These insights will help to identify areas of difficulty and adjust exercises or practice sentences during subsequent sessions.
+        - img [ref=f1e126]:
+          - generic [ref=f1e127]: This contributes to our in-personsessions being more targeted andallows us to make adjustments totheir practice sentences.
+          - generic [ref=f1e128]: – Mr Jarrod Lee
+        - paragraph [ref=f1e135]: However, technology does not replace the therapist’s role. As Dr Tay explained, therapists will continue to assess patients, set their rehabilitation goals and tailor therapy to each individual’s needs”.
+        - heading "Supporting recovery beyond supervised sessions" [level=2] [ref=f1e136]
+        - paragraph [ref=f1e137]: With this support in place, AISay could give patients more opportunities to practise independently while allowing therapists to focus on areas that require direct clinical input.
+        - img [ref=f1e138]:
+          - generic [ref=f1e139]: “Not every practice session requires direct supervision. When patients can continue structured rehabilitation independently between therapist-led sessions, they receive more opportunities to practise.”
+          - generic [ref=f1e140]: – Dr Elvina Tay
+        - paragraph [ref=f1e147]: Speech therapists will have more time to support patients who require specialised care, such as assessment and management of swallowing difficulties.
+        - paragraph [ref=f1e148]: The approach reflects NUHS’ Healthcare Workforce of the Future focus on using technology to support care delivery and make better use of healthcare professionals’ time. Rather than replacing therapist-led rehabilitation, AI could help extend the reach of care into the time between appointments and into patients’ homes.
+        - paragraph [ref=f1e149]: For Dr Tay, her vision is for rehabilitation to become part of patients’ everyday lives, “so that every opportunity to practise becomes another opportunity to recover”.
+        - paragraph [ref=f1e150]:
+          - strong [ref=f1e151]:
+            - text: In consultation with
+            - link "Dr Elvina Tay" [ref=f1e152] [cursor=pointer]:
+              - /url: https://www.nuhs.edu.sg/patient-care/find-a-doctor/doctor-details/Elvina_Tay
+            - text: ", Consultant, Department of Post-Acute & Continuing Care, JCH, and Clin Asst Prof, Department of Medicine, NUS Yong Loo Lin School of Medicine (NUS Medicine); and Mr Jarrod Lee, Speech Therapist, NTFGH."
+        - generic [ref=f1e155]:
+          - table [ref=f1e156]:
+            - rowgroup [ref=f1e157]:
+              - row [ref=f1e158]:
+                - cell [ref=f1e159]:
+                  - paragraph [ref=f1e160]:
+                    - strong
+                    - text: The
+                    - link [ref=f1e161] [cursor=pointer]:
+                      - /url: https://www.nuhsplus.edu.sg/generalSearch/?keyword=Healthcare-Workforce-of-the-Future
+                      - strong [ref=f1e162]: Healthcare Workforce of the Future (HWF)
+                    - strong [ref=f1e163]
+                    - text: "at NUHS is to future-proof how we work, so that we can better care for patients and our staff. It focuses on six areas: Redesigning Jobs, Reimagining Teams, Refining Processes, Revamping Systems, Refocusing Care Models and Revitalising Tech – to ease workloads, support wellbeing and prepare NUHS for tomorrow."
+          - paragraph [ref=f1e164]
+        - list [ref=f1e166]:
+          - listitem [ref=f1e167]:
+            - link "Science" [ref=f1e168] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Science
+          - listitem [ref=f1e169]:
+            - link "Speech therapy" [ref=f1e170] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Speech-therapy
+          - listitem [ref=f1e171]:
+            - link "Rehabilitation medicine" [ref=f1e172] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Rehabilitation-medicine
+          - listitem [ref=f1e173]:
+            - link "Ng Teng Fong General Hospital" [ref=f1e174] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Ng-Teng-Fong-General-Hospital
+          - listitem [ref=f1e175]:
+            - link "National University Hospital" [ref=f1e176] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=National-University-Hospital
+          - listitem [ref=f1e177]:
+            - link "National University Health System" [ref=f1e178] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=National-University-Health-System
+          - listitem [ref=f1e179]:
+            - link "Jurong Community Hospital" [ref=f1e180] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Jurong-Community-Hospital
+          - listitem [ref=f1e181]:
+            - link "Alexandra Hospital" [ref=f1e182] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Alexandra-Hospital
+          - listitem [ref=f1e183]:
+            - link "Dysarthria" [ref=f1e184] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Dysarthria
+          - listitem [ref=f1e185]:
+            - link "AISay" [ref=f1e186] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=AISay
+          - listitem [ref=f1e187]:
+            - link "Stroke" [ref=f1e188] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Stroke
+          - listitem [ref=f1e189]:
+            - link "Healthcare Workforce of the Future" [ref=f1e190] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Healthcare-Workforce-of-the-Future
+          - listitem [ref=f1e191]:
+            - link "Artificial intelligence" [ref=f1e192] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Artificial-intelligence
+          - listitem [ref=f1e193]:
+            - link "Speech therapy" [ref=f1e194] [cursor=pointer]:
+              - /url: /generalSearch/?keyword=Speech-therapy
+    - generic [ref=f1e196]:
+      - heading "Related Articles" [level=3] [ref=f1e197]
+      - generic [ref=f1e199]:
+        - link "Shaping the future of Allied Health & Pharmacy News People Multimedia Shaping the future of Allied Health & Pharmacy  The future of healthcare is not a distant vision. At NUHS, Allied Health & Pharmacy professionals are already transforming how care is delivered." [ref=f1e201] [cursor=pointer]:
+          - /url: /stories/shaping-the-future-of-allied-health-pharmacy-v1
+          - img "Shaping the future of Allied Health & Pharmacy" [ref=f1e203]
+          - generic [ref=f1e204]:
+            - generic [ref=f1e205]: News
+            - generic [ref=f1e206]: People
+            - generic [ref=f1e207]: Multimedia
+            - paragraph [ref=f1e208]: Shaping the future of Allied Health & Pharmacy
+            - generic [ref=f1e209]: 
+            - paragraph [ref=f1e210]: The future of healthcare is not a distant vision. At NUHS, Allied Health & Pharmacy professionals are already transforming how care is delivered.
+        - 'link "Off to a ‘weaningful’ start: Is your baby ready for solids? Lifestyle Off to a ‘weaningful’ start: Is your baby ready for solids?  Introducing your baby to their first taste of solids is exciting yet nerve-racking. Spot the signs of weaning readiness and make mealtimes fun and stress-free." [ref=f1e212] [cursor=pointer]':
+          - /url: /article/off-to-a-weaningful-start-is-your-baby-ready-for-solids
+          - 'img "Off to a ‘weaningful’ start: Is your baby ready for solids?" [ref=f1e214]'
+          - generic [ref=f1e215]:
+            - generic [ref=f1e216]: Lifestyle
+            - paragraph [ref=f1e217]: "Off to a ‘weaningful’ start: Is your baby ready for solids?"
+            - generic [ref=f1e218]: 
+            - paragraph [ref=f1e219]: Introducing your baby to their first taste of solids is exciting yet nerve-racking. Spot the signs of weaning readiness and make mealtimes fun and stress-free.
+        - 'link "Jobs You Didn''t Think Existed in NUHS: Speech Therapist Lifestyle People Jobs You Didn''t Think Existed in NUHS: Speech Therapist  When do we need to see a speech therapist?" [ref=f1e221] [cursor=pointer]':
+          - /url: /article/jobs-you-didn't-think-existed-in-nuhs-speech-therapist
+          - 'img "Jobs You Didn''t Think Existed in NUHS: Speech Therapist" [ref=f1e223]'
+          - generic [ref=f1e224]:
+            - generic [ref=f1e225]: Lifestyle
+            - generic [ref=f1e226]: People
+            - paragraph [ref=f1e227]: "Jobs You Didn't Think Existed in NUHS: Speech Therapist"
+            - generic [ref=f1e228]: 
+            - paragraph [ref=f1e229]: When do we need to see a speech therapist?
+    - generic [ref=f1e237]:
+      - paragraph [ref=f1e238]: Stay informed
+      - paragraph [ref=f1e239]: on the latest health, science and patient stories from NUHS.
+      - link [ref=f1e240] [cursor=pointer]:
+        - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+        - text: Subscribe
+        - strong [ref=f1e241]: now
+  - contentinfo [ref=f1e242]:
+    - text: 
+    - generic [ref=f1e245]:
+      - generic [ref=f1e246]:
+        - link [ref=f1e248] [cursor=pointer]:
+          - /url: https://www.nuhs.edu.sg/Pages/Home.aspx
+          - img "White NUHS Logo" [ref=f1e249]
+        - generic [ref=f1e250]:
+          - list [ref=f1e252]:
+            - listitem [ref=f1e253]:
+              - link "National University Hospital" [ref=f1e254] [cursor=pointer]:
+                - /url: https://www.nuh.com.sg/Pages/Home.aspx
+            - listitem [ref=f1e255]:
+              - link "Ng Teng Fong General Hospital" [ref=f1e256] [cursor=pointer]:
+                - /url: https://www.ntfgh.com.sg/Pages/default.aspx
+            - listitem [ref=f1e257]:
+              - link "Alexandra Hospital" [ref=f1e258] [cursor=pointer]:
+                - /url: https://www.ah.com.sg/Pages/Home.aspx
+            - listitem [ref=f1e259]:
+              - link "Jurong Community Hospital" [ref=f1e260] [cursor=pointer]:
+                - /url: https://www.jch.com.sg/Pages/default.aspx
+            - listitem [ref=f1e261]:
+              - link "National University Polyclinics" [ref=f1e262] [cursor=pointer]:
+                - /url: https://www.nup.com.sg/
+          - list [ref=f1e264]:
+            - listitem [ref=f1e265]:
+              - link "Jurong Medical Centre" [ref=f1e266] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Care-in-the-Community/JMC/Pages/default.aspx
+            - listitem [ref=f1e267]:
+              - link "National University Cancer Institute Singapore" [ref=f1e268] [cursor=pointer]:
+                - /url: https://www.ncis.com.sg/Pages/Home.aspx
+            - listitem [ref=f1e269]:
+              - link "National University Heart Centre Singapore" [ref=f1e270] [cursor=pointer]:
+                - /url: https://www.nuhcs.com.sg/Pages/default.aspx
+            - listitem [ref=f1e271]:
+              - link "National University Centre for Oral Health Singapore" [ref=f1e272] [cursor=pointer]:
+                - /url: https://www.nucohs.com.sg/Pages/home.aspx
+            - listitem [ref=f1e273]:
+              - link "NUHS Diagnostics" [ref=f1e274] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Diagnostics/Pages/default.aspx
+          - list [ref=f1e276]:
+            - listitem [ref=f1e277]:
+              - link "NUHS Pharmacy" [ref=f1e278] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Pharmacy/Pages/default.aspx
+            - listitem [ref=f1e279]:
+              - link "National University of Singapore - Yong Loo Lin School of Medicine" [ref=f1e280] [cursor=pointer]:
+                - /url: https://medicine.nus.edu.sg/
+            - listitem [ref=f1e281]:
+              - link "National University of Singapore - Faculty of Dentistry" [ref=f1e282] [cursor=pointer]:
+                - /url: http://www.dentistry.nus.edu.sg/
+            - listitem [ref=f1e283]:
+              - link "National University of Singapore - Saw Swee Hock School of Public Health" [ref=f1e284] [cursor=pointer]:
+                - /url: https://sph.nus.edu.sg/
+      - generic [ref=f1e285]:
+        - generic [ref=f1e287]:
+          - list [ref=f1e288]:
+            - listitem [ref=f1e289]:
+              - link "About NUHS" [ref=f1e290] [cursor=pointer]:
+                - /url: /about-us/nuhs
+            - listitem [ref=f1e291]:
+              - link "Terms of Use" [ref=f1e292] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Pages/terms-of-use.aspx
+          - list [ref=f1e293]:
+            - listitem [ref=f1e294]:
+              - link "linkedin" [ref=f1e295] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/national-university-health-system
+                - generic [ref=f1e296]: 
+            - listitem [ref=f1e297]:
+              - link "facebook" [ref=f1e298] [cursor=pointer]:
+                - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                - generic [ref=f1e299]: 
+            - listitem [ref=f1e300]:
+              - link "instagram" [ref=f1e301] [cursor=pointer]:
+                - /url: https://www.instagram.com/nuhsofficial
+                - generic [ref=f1e302]: 
+            - listitem [ref=f1e303]:
+              - link "tiktok" [ref=f1e304] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@nuhsofficial
+                - generic [ref=f1e305]: 
+            - listitem [ref=f1e306]:
+              - link "facebook" [ref=f1e307] [cursor=pointer]:
+                - /url: https://t.me/nuhsofficial
+                - generic [ref=f1e308]: 
+        - paragraph [ref=f1e310]: © 2026 National University Health System

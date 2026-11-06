@@ -16,9 +16,165 @@ The objective is to:
 
 Generate maintainable, reusable, and evidence-driven Playwright coverage.
 
+When website-test-plan.md defines a scope, this objective applies to the scope only (see Scope Control).
+
 Never generate coverage from assumptions.
 
 Always generate coverage from discovered behavior.
+
+---
+
+## Scope Control
+
+website-test-plan.md is the authority for scope.
+
+website.md is the planning input. It is read to produce and update the plan.
+After that, the plan is the single source of scope for both planning updates
+and generation.
+
+Planning:
+
+1. Read website.md and any existing website-test-plan.md.
+2. Resolve the in-scope areas, expanding each to its directly attached
+   controls and the destination pages those controls lead to.
+3. Record a Scope section in website-test-plan.md containing:
+   - In-scope areas
+   - Out-of-scope items
+   - Scope notes from website.md (for example platform limits, depth limits
+     for destination pages, and the popup blocker rule)
+4. The Scope section describes website scope only. Role restrictions such as
+   "do not generate code" or "planning output only" belong to the planner
+   role. Never record them in the Scope section or as out-of-scope items.
+
+Generation:
+
+1. Take scope only from the Scope section of website-test-plan.md. Treat
+   website.md as context, not as a second source of scope.
+2. Generate only for in-scope areas. Items listed as out of scope stay out
+   of generation.
+3. If website.md and the plan differ, the plan wins. Run planning first to
+   merge the change into the plan.
+4. If the Scope section lists code generation or automation as out of
+   scope, treat that as a planner role restriction. Ignore it, continue
+   generation, and mention it in the summary.
+5. If the plan has no Scope section, fall back to website.md. If neither
+   defines scope, treat the run as a full-site run.
+
+When scope is defined:
+
+- Do not run full-site discovery.
+- The following sections apply to full-site runs only: Discovery Execution
+  Order, Navigation Coverage Strategy, Navigation Completeness Requirement,
+  Future Navigation Discovery, Navigation Hierarchy Exploration, Shared
+  Component Auto Discovery, and Comprehensive Website Discovery.
+- The Discovery Termination Rule, Page Completion Verification, and
+  Generation Quality Gate apply only to the resolved scope.
+
+When no scope is defined, discover the entire website as described below.
+
+The plan decides where to look. This file decides what must be checked
+there. Do not skip a check in this file because the plan does not mention it.
+
+---
+
+## Scope-Triggered Standards
+
+After resolving scope, list the element types found in it. Each type below
+triggers mandatory checks, whether or not the plan mentions them.
+
+| Found in scope | Mandatory checks |
+|---|---|
+| Lighthouse is mandatory for representative in-scope pages. Respect the
+plan's device and page scope; do not audit excluded pages or device profiles.
+Other optional checks run only when their tooling is available and scope
+does not exclude them. |
+| Any interaction that changes content (Load More, pagination, infinite scroll, search, filter, sort, carousel) | Network discovery: capture the requests the interaction triggers. Keep the evidence inside the owning workflow. |
+| Any expandable or paged content | Load More Discovery: counts before and after each activation, until the end state. |
+| Any item that navigates | Destination page type and navigation outcome. |
+| Any time-based or automatic behavior (auto-rotation, delayed content) | Validate observable state changes with polling. Never use fixed waits. |
+| Any popup or overlay | The popup rule recorded in the plan's Scope section when present, otherwise Popup Handling. Popup persistence only when the plan's scope asks for it. |
+| Any generated test | Screenshot Standards, report attachments, failure evidence, and shared helpers. |
+
+Optional checks (Lighthouse and similar) run only when their tooling is
+available and scope does not exclude them.
+
+If planning finds that a mandatory check was not covered by the plan, add it
+to website-test-plan.md. If generation finds the plan is missing a mandatory
+check for an in-scope element, perform that discovery live, add the finding
+to website-test-plan.md, then generate coverage from it.
+
+---
+
+## Component Playbook
+
+How to discover and capture each component. These are reused for every run.
+
+### Network And API
+
+For in-scope actions that change content or state, observe network activity
+before triggering the action.
+
+- Identify requests caused by the action during discovery.
+- Capture all relevant action-triggered requests and responses, not only
+  the first matching response.
+- Exclude unrelated background and analytics requests.
+- Wait for the relevant responses and resulting UI state before completing
+  evidence collection.
+- Attach request and response evidence to the originating test using a
+  reusable helper.
+- Remove any network listeners after the workflow.
+
+Follow the API Evidence Collection section for evidence details and
+sensitive-data handling.
+
+### SEO
+
+- Check page title, meta description, canonical URL, heading structure (one
+  h1, logical order), Open Graph and Twitter metadata, and image alt text.
+- Read values from the rendered page. Validate one representative page per
+  template and do not repeat it for every item sharing that template.
+- Record missing, empty, or duplicated values as findings.
+
+### Load More And Expanding Content
+
+- Record the count before the action, after each activation, and the
+  increase per activation. Continue until the control disappears or stops
+  adding content. Record the final total.
+
+### Carousels And Auto-Rotation
+
+- Identify the active item. Validate that it changes through arrows and
+  through automatic rotation, using polling on the active item. Do not
+  assert exact timings.
+
+### Click-Through Items
+
+- Click a representative item, confirm the destination loads, and record the
+  page type and URL pattern.
+
+### Screenshots And Evidence
+
+- Capture only at meaningful business states, through the shared helper,
+  with T# naming. Attach every screenshot to the Playwright report.
+
+### Popups
+
+- Check before every interaction and after every scroll. Dismiss, verify
+  closed, resume, and record one line per appearance.
+
+---
+
+## Planner And Generator Responsibilities
+
+Planner: read website.md, resolve scope, record the Scope section in
+website-test-plan.md, list element types, apply the Scope-Triggered
+Standards, and record discovered behavior and findings in the plan. Do not
+generate code.
+
+Generator: take scope from the plan's Scope section, confirm the plan covers
+every mandatory check for the in-scope elements, fill gaps by discovering them
+live and recording them in the plan, then generate or update tests following
+the Component Playbook and the helper rules.
 
 ---
 
@@ -230,7 +386,7 @@ After a shared component has been identified and documented:
 
 Examples include:
 
-- Newsletter Popup
+- MailingList Popup
 - Cookie Banner
 - Accessibility Controls
 - Header
@@ -262,11 +418,25 @@ Avoid remaining on the same page solely to repeatedly validate the same shared c
 
 Every discovered feature must have one primary owner.
 
+Coverage ownership should be assigned dynamically based on discovered website structure.
+
+Ownership should be determined from:
+
+- Shared functionality
+- Navigation structure
+- Business domains
+- Module boundaries
+- User journeys
+
+Avoid assigning ownership based on individual validation scenarios.
+
+Planning should identify ownership areas rather than automation test cases.
+
+Generation should group related validations under the same coverage owner whenever practical.
+
 ### Shared Components
 
-Generate:
-
-global.spec.ts
+Assign ownership to a shared component coverage area.
 
 Examples:
 
@@ -276,23 +446,13 @@ Examples:
 - Social Media
 - Accessibility Controls
 - Popup
-- Cookie Behavior
+- Cookie Behaviour
 - Scroll-To-Top
 - Subscribe Functionality
 
 ### Navigation Components
 
-Generate:
-
-<navigation>.spec.ts
-
-Examples:
-
-- Landing Pages
-- Content Listings
-- Content Relationships
-- Destination Pages
-- Navigation Workflows
+Assign ownership to discovered navigation coverage areas.
 
 ### Page-Specific Components
 
@@ -312,9 +472,7 @@ Avoid duplicate ownership.
 
 ## Shared Component Coverage
 
-Shared functionality belongs to:
-
-global.spec.ts
+Shared functionality should be assigned to a shared component coverage owner.
 
 Examples:
 
@@ -322,13 +480,17 @@ Examples:
 - Footer
 - Search Access
 - Accessibility Controls
-- Subscribe
+- Subscribe Functionality
 - Social Media
-- Popup Behavior
+- Popup Behaviour
 - Cookie Persistence
 - Scroll-To-Top
 
-Only generate page-specific coverage when behavior differs.
+Only generate page-specific coverage when behaviour differs.
+
+Coverage ownership should remain conceptual during planning.
+
+Final spec file organization should be determined during generation based on discovered coverage ownership areas.
 
 ---
 
@@ -338,7 +500,7 @@ Shared component implementation must follow the validation location selected dur
 
 Do not arbitrarily select alternate pages during generation.
 
-When generating global.spec.ts:
+When generating shared component coverage:
 
 - Follow the preferred validation location documented in website-test-plan.md.
 - Do not substitute another page for convenience.
@@ -595,16 +757,19 @@ Document observed behavior and validation opportunities.
 
 ---
 
-### Popup Handling
+## Popup Handling
 
-When popups appear:
+Follow the popup rule recorded in the plan's Scope section when present.
 
-- Identify the popup.
-- Record discovered behavior.
-- Capture any required evidence.
-- Close or dismiss the popup.
-- Verify the popup no longer blocks interaction.
-- Continue discovery.
+If a blocking popup appears and popup behavior is not in scope:
+
+1. Pause the current interaction.
+2. Dismiss it using its observed close or dismiss control.
+3. Verify it is no longer visible and no longer blocks the interaction.
+4. Resume the interrupted step.
+
+Do not create popup validation or persistence coverage unless it is in scope.
+If it cannot be safely dismissed, report the blocker and affected coverage.
 
 Discovery should pause while a blocking popup remains visible.
 
@@ -612,24 +777,37 @@ Do not continue:
 
 - Scrolling
 - Navigation
-- Exploration
+- Search exploration
+- Page discovery
 - Workflow discovery
 - Component discovery
-- Validation discovery
+- SEO discovery
 
-while a blocking popup, modal, overlay, newsletter prompt, or cookie prompt remains visible.
+while a blocking popup, modal, overlay, Mailing List Subscription Popup,
+subscribe prompt, cookie banner, consent dialog, or similar blocking
+component remains visible.
 
-Once popup behaviour has been documented and validated, continue discovery.
+Popup dismissal takes precedence over continued discovery.
 
-Do not repeatedly trigger and revalidate the same popup during the same discovery session unless persistence behaviour is being analysed.
+Discovery findings gathered while a blocking popup remains visible should not
+be considered complete until the popup has been dismissed.
 
-Popup dismissal takes precedence over continued discovery when the popup blocks interaction.
+Continue discovery after the popup has been dismissed. Document and validate
+popup behavior only when the plan includes it in scope.
 
-Discovery should prioritise discovering new functionality rather than repeatedly validating previously documented popup behaviour.
+Check for blocking popups when an interaction is obstructed and before
+capturing evidence of the intended page state. A popup may appear after
+navigation, scrolling, or another action. Use a reusable dismissal helper;
+do not force-click through the overlay.
+
+Do not repeatedly trigger and revalidate the same popup during the same
+discovery session unless persistence behaviour is being analysed.
 
 ---
 
 ## Popup Persistence Discovery
+
+In a scoped run, analyze popup persistence only when the plan's Scope section asks for it.
 
 When popup functionality exists:
 
@@ -662,25 +840,32 @@ Discovery is complete only when:
 
 ## Spec File Organization
 
-Generate one spec file per:
+Organize functional specs around discovered website coverage areas. Assign
+every in-scope behavior one primary owner.
 
-- Shared Component Area
-- Navigation Area
-- Business Area
-- Major Feature Area
+- Put genuinely shared, cross-page components and behavior in
+  `global.spec.ts`.
+- Put each distinct navigation area, page, or module in its own
+  appropriately named spec when it has in-scope behavior.
+- Keep an area's directly attached controls and workflows in that area's
+  spec. Do not create a separate spec for each control, assertion, or
+  test scenario.
+- When a shared component has a meaningful page-specific variation,
+  cover its common behavior in `global.spec.ts` and the variation in the
+  relevant area spec. Do not duplicate the common checks.
+- Keep Lighthouse audits in their own suite, separate from functional specs.
 
-Examples:
+Discover the navigation areas and shared components from the website and
+the plan. Do not assume particular pages or create empty spec files.
 
-- global.spec.ts
-- homepage.spec.ts
-- news.spec.ts
-- search.spec.ts
-- directory.spec.ts
-- special-module.spec.ts
+Follow the repository's existing folder and naming conventions. Reuse
+suitable existing specs where appropriate, and create files only for
+coverage in scope.
 
-Do not combine unrelated navigation areas.
-
-Do not duplicate coverage owned elsewhere.
+The planning document should describe coverage ownership conceptually.
+Apply the file organization during generation. When updating existing
+tests, preserve valid and unrelated coverage, and account for it before
+moving or removing files.
 
 ---
 
@@ -783,6 +968,8 @@ Prefer validating behaviour under realistic user conditions.
 
 ## Dynamic Content And Network Validation
 
+Network discovery is mandatory for every in-scope interaction that changes content (see Scope-Triggered Standards). "When practical" below applies only to optional detail.
+
 Identify:
 
 - REST APIs
@@ -817,53 +1004,71 @@ Identify:
 - Page-load requests
 - User-triggered requests
 - Background requests
+- State-change requests
+- Dynamic content requests
 
 For discovered requests capture:
 
 - Request URL
 - Request Method
+- Request Payload when available
 - Response Status
 - Response Timing
+- Response Summary when available
 
 Document discovered APIs and their associated user journeys.
 
----
+Do not rely on predefined API endpoints.
+
+Discover and associate network activity dynamically based on observed application behaviour.
 
 ### API Evidence Collection
 
-Capture API activity when it contributes to understanding application behaviour.
+Capture network activity that contributes to an in-scope workflow,
+interaction, state change, or user-visible outcome.
 
-Examples:
+Begin observing before the triggering action. Identify the relevant
+requests from observed behavior and associate them with the workflow.
+Do not assume that every action triggers an API request.
 
-Automatic Page Activity
+For each relevant request, capture and attach when available:
 
-- Homepage Load
-- Search Page Load
-- Detail Page Load
+- Request URL and method
+- Request payload
+- Response status and content type
+- Response body, not only a summary
+- Timing
+- Request failure or response-body read error
 
-User Actions
+Capture all relevant requests caused by the action. Wait for the relevant
+responses and the expected UI state, then stop observation and remove
+listeners. Do not rely on arbitrary fixed delays.
 
-- Search Submission
-- Filtering
-- Sorting
-- Load More
-- Pagination
-- Form Submission
-- Content Navigation
-- Button Click Actions
+Redact credentials, tokens, cookies, personal data, and other sensitive
+information from URLs, headers, payloads, and response bodies before
+attaching evidence. If a body cannot be read or must be truncated, record
+that explicitly with the reason. Do not silently discard capture errors.
 
-Capture:
+Use the evidence to show:
 
-- Request
-- Response
-- Status Code
-- Response Time
+- Which action triggered the request
+- What request and response were observed
+- How the response relates to the resulting user-visible outcome
 
-Include relevant API evidence in generated reports when practical.
+Keep network validation within the owning workflow whenever practical.
+Do not create a separate API-only test when the request belongs to a
+functional workflow.
+
+Do not assert exact endpoints, payloads, status codes, response structures,
+or timings unless they are specified or established as reliable contracts.
 
 ---
 
 ## SEO And Performance Validation
+
+SEO metadata validation and Lighthouse audits are mandatory for representative
+in-scope page types, regardless of whether the functional specification
+mentions them (see Scope-Triggered Standards).
 
 When practical analyze:
 
@@ -884,29 +1089,124 @@ When Lighthouse tooling is available analyze:
 - Performance
 - Best Practices
 
-Generate reusable SEO and performance validations whenever sufficient information is available.
+Generate dedicated SEO and performance coverage whenever discoverable SEO metadata or SEO-relevant page structures are present.
 
 Capture significant SEO findings in generated reports when practical.
 
 Attach Lighthouse reports to test evidence when supported by the framework.
 
+SEO coverage should focus on representative page types rather than individual content instances when behaviour is inherited from a shared template.
+
+Identify representative page types from discovered website structure.
+
+When multiple pages share the same SEO implementation:
+
+- Select representative pages.
+- Validate template behaviour.
+- Validate metadata generation behaviour.
+- Avoid duplicate SEO coverage across identical content instances.
+
+Prioritize coverage breadth across discovered page types rather than repetitive validation of pages that share the same implementation.
+
+SEO coverage should focus on:
+
+- Template behaviour
+- Metadata quality
+- Content type coverage
+
+rather than exhaustive validation of every individual page.
+
+---
+
+### Representative SEO Coverage Strategy
+
+When multiple pages share the same template, layout, metadata implementation, or content structure:
+
+Prefer validating representative pages rather than generating duplicate SEO coverage for every content instance.
+
+Examples may include:
+
+- Articles
+- News Items
+- Blog Posts
+- Resources
+- Publications
+- Directory Entries
+- CMS-Generated Detail Pages
+- Product Pages
+
+When equivalent SEO behaviour is expected across pages generated from the same template:
+
+- Select representative pages.
+- Validate the shared metadata implementation.
+- Validate canonical behaviour.
+- Validate heading structure.
+- Validate structured data where applicable.
+
+Avoid generating identical SEO validations for every content instance when the behaviour is inherited from the same template.
+
+Prioritize coverage breadth across page types rather than repetitive validation of pages that share the same implementation.
+
+SEO coverage should focus on:
+
+- Template behaviour
+- Metadata quality
+- Content type coverage
+
+rather than exhaustive validation of every individual page.
+
 ---
 
 ### Lighthouse Configuration Strategy
 
-When executing Lighthouse audits:
+During planning, identify representative in-scope page types and device
+profiles for Lighthouse coverage and record them in website-test-plan.md.
+Record any audit limitations or blockers in the plan. Planning produces
+planning output only, not test code or configuration.
 
-Run audits against representative device profiles.
+During generation, create runnable Lighthouse audits for those pages and
+profiles, even when Lighthouse is not mentioned in the functional
+specification. Reuse an existing compatible setup where available. Otherwise,
+create the required test and configuration, and add only necessary
+dependencies in accordance with Configuration Handling.
+
+When no compatible Lighthouse setup exists:
+
+- Automatically create a dedicated Playwright Lighthouse configuration and
+  Lighthouse spec files in appropriate locations for the existing project.
+  Configure test discovery to include the generated audit specs.
+- Define or reuse configuration for the base URL, representative in-scope
+  pages, device profiles, Lighthouse settings, score thresholds, and report
+  output paths. Use the supplied URL or an existing project setting; do not
+  invent a URL or credentials. Report missing required inputs as blockers.
+- Configure a compatible Chromium-based browser and Lighthouse connection.
+  Ensure browser launch settings and audit connection settings agree, and
+  prevent debugging-port conflicts between concurrent audits.
+- Keep Lighthouse audits separate from unrelated functional tests. Respect
+  the plan's device scope; do not generate mobile audits for desktop-only scope.
+- Ensure all referenced config modules, imports, dependencies, and output
+  paths exist and are consistent. Update the dependency manifest and lockfile
+  if a required development dependency is missing.
+- Provide commands using the actual configuration and spec paths to list and
+  run the Lighthouse suite and view its reports.
+
+Validate the generated setup by listing the intended tests and running the
+audit when the environment and site are accessible. Report setup failures,
+inaccessible pages, and failed audits explicitly. Do not claim the setup is
+verified if execution is blocked, and do not treat a skipped or empty suite as
+a successful audit.
+
+Run audits against representative in-scope device profiles.
 
 Preferred Profiles:
 
 Desktop:
 - Chromium Desktop
 
-Mobile:
+Mobile, only when in scope:
 - Mobile Device Emulation
 
-When practical validate:
+Select representative pages from the in-scope page types, such as:
 
 - Homepage
 - Landing Pages
@@ -922,6 +1222,10 @@ Capture:
 
 Report Lighthouse findings as part of generated evidence.
 
+Save an HTML report for each audit, including failing audits. If setup or
+execution cannot be completed, report the reason and affected coverage
+explicitly; do not silently skip an audit or claim it passed.
+
 ---
 
 ### Lighthouse Threshold Strategy
@@ -935,9 +1239,15 @@ Default thresholds:
 
 When thresholds are violated:
 
-- Capture Lighthouse evidence
-- Record failing metrics
-- Include findings within generated reports
+- Fail the audit test.
+- Capture Lighthouse evidence.
+- Record failing metrics.
+- Include findings in generated reports.
+
+Apply thresholds to each audited page and each required category. Interpret
+scores and thresholds on a consistent 0–100 scale; convert Lighthouse scores
+if the audit tool returns values on a 0–1 scale. A missing category score is
+an error, not a pass.
 
 Thresholds may be adjusted when project requirements specify different targets.
 
@@ -963,51 +1273,25 @@ Wait for business outcomes rather than elapsed time.
 
 ## Screenshot Standards
 
-Capture:
+Each test case should produce at least one successful validation screenshot
+and failure evidence when it fails.
 
-1. Before Action
-2. After Action
-3. After Validation
+Capture and attach screenshots at meaningful points in the workflow.
+A screenshot may be taken before an action, after an action, or at both
+points when useful.
 
-Do not save screenshots directly into the root test-results folder.
+Choose evidence points based on what a reviewer needs to understand:
 
-Screenshots should be grouped by suite and test case.
+- The starting state
+- The action or relevant control
+- A significant state change
+- The validation outcome
+- A failure
 
-Preferred structure:
+Use descriptive attachment names and reusable screenshot helpers. Ensure
+screenshots show the relevant content and do not expose sensitive data.
 
-test-results/
-  screenshots/
-    <suite-name>/
-      <test-name>/
-        before.png
-        after.png
-        validation.png
-
-Examples:
-
-test-results/
-  screenshots/
-    global/
-      scroll-to-top/
-        before.png
-        after.png
-        validation.png
-
-test-results/
-  screenshots/
-    global/
-      newsletter-popup-dismiss/
-        before.png
-        after.png
-        validation.png
-
-Use reusable helper methods for screenshot generation.
-
-Avoid hardcoded screenshot paths inside individual test cases.
-
-Screenshot functionality should be reusable across all generated test suites.
-
-All screenshot paths should be generated automatically by shared helper utilities.
+Do not enforce the same screenshot sequence for every workflow.
 
 ---
 
@@ -1095,7 +1379,11 @@ Preferred evidence points include:
 - Final State
 - Failure State
 
-Avoid generating screenshots before and after every action when equivalent validation evidence can be provided with fewer captures.
+Screenshots may be captured before an action, after an action, or at both
+points when useful to demonstrate the workflow and its outcome.
+
+For workflows that visibly change content, capture the relevant state before
+the action and after the updated content is displayed when practical.
 
 The amount of evidence should be proportional to the complexity of the workflow.
 
@@ -1114,7 +1402,7 @@ Additional screenshots should represent meaningful business outcomes rather than
 
 Examples:
 
-Font Size Changer
+Text Resizer
 
 - Small Validation
 - Medium Validation
@@ -1199,7 +1487,7 @@ Additional screenshots should represent meaningful business states rather than i
 
 Examples:
 
-Font Size Changer
+Text Resizer
 
 - T1a-Default-State.png
 - T1b-Small-Validation.png
@@ -1368,81 +1656,79 @@ Retain evidence in a format suitable for:
 
 Evidence should support automated troubleshooting without requiring manual reproduction.
 
+When network activity contributes to validation:
+
+Retain:
+
+- Request Details
+- Response Details
+- Status Codes
+- Timing Information
+
+Evidence should be attached to the originating test result.
+
+Network evidence should support:
+
+- Troubleshooting
+- Failure Analysis
+- Runtime Investigation
+- AI-Assisted Healing
+
+When practical, include network evidence as report attachments rather than console output only.
+
+Request and response evidence should be attached to the originating test result whenever practical.
+
+Network evidence should be visible from generated reports in the same way as screenshots, logs, and other execution artifacts.
+
+Prefer report attachments over console-only output.
+
 ---
 
 ## Helper Strategy
 
-Store reusable functionality in:
+Before generating or changing tests:
 
-support/helper.ts
+1. Inspect the project for existing reusable helpers.
+2. Reuse compatible helpers instead of creating duplicates.
+3. Identify functionality needed by multiple generated specs.
+4. Extract reusable functionality into helpers and import it into the specs.
 
-Fallback:
+Use the project's existing helper location when one is established. Otherwise,
+create `tests/support/helper.ts` when reusable functionality is needed.
 
-tests/support/helper.ts
+Screenshot capture, report attachments, and failure evidence must be
+implemented in reusable helpers and shared across generated suites. Do not
+define duplicate implementations of these functions inside individual specs.
 
-Before creating new code:
+When multiple specs need the same workflow support, such as dismissing a
+blocking overlay, implement it once in a reusable helper. Follow the
+popup rules in the plan; a dismiss helper must not introduce out-of-scope
+popup or persistence tests.
 
-1. Review existing helpers.
-2. Reuse helper methods.
-3. Avoid duplicate implementations.
-4. Extract repeated workflows.
+Keep page-specific locators, assertions, and business behavior in the
+owning spec unless they are genuinely reusable.
 
-Store reusable evidence collection functionality in helper utilities.
-
-Examples:
-
-- captureScreenshot()
-- captureValidationScreenshot()
-- captureFailureScreenshot()
-- attachScreenshotToReport()
-- captureEvidence()
-
-Screenshot capture and report attachment should be implemented once and reused across all generated suites.
-
-Do not generate duplicate screenshot handling logic inside individual spec files.
-
-Evidence collection should be centralized and shared across all generated test suites.
-
-Generated helper implementations should support:
+Helpers should support:
 
 - Screenshot capture
 - Report attachment
 - Failure evidence collection
 - Error evidence collection
 
-Avoid creating duplicate screenshot and reporting implementations across test suites.
+Keep evidence helpers flexible and workflow-agnostic. Let each test decide
+when evidence is needed, what to capture, and how many evidence points are
+appropriate. Prefer evidence that demonstrates business outcomes rather
+than enforcing a fixed before-and-after sequence.
 
-Evidence collection should be centralized whenever practical.
+When an existing helper conflicts with project standards, update or refactor
+it carefully while preserving its existing consumers and behavior. Do not
+replace a working helper solely to match a preferred name or path.
 
-Helpers should remain workflow-agnostic.
+Before completing generation:
 
-Do not enforce a fixed evidence lifecycle for all workflows.
-
-Examples of fixed patterns that should not be universally applied:
-
-- Before Action
-- After Action
-- Validation
-
-Different workflows may require different evidence strategies.
-
-Capture evidence at meaningful validation points rather than enforcing a predefined sequence.
-
-Prefer flexible helper methods that allow generated tests to decide:
-
-- When evidence is required
-- What evidence is required
-- How many evidence points are required
-
-Avoid generating helper implementations that assume all workflows follow the same structure.
-
-Prefer evidence that demonstrates business outcomes rather than individual interactions whenever practical.
-
-When existing helper implementations conflict with repository standards, generation should refactor or replace them.
-
-Do not continue reusing helper implementations that enforce workflow patterns inconsistent with discovered business behaviour.
-
-Helper reuse is preferred, but correctness, maintainability, and alignment with current standards take precedence over reuse.
+- Check generated specs for duplicate helper implementations.
+- Confirm helper imports resolve and existing consumers still work.
+- Report any reuse or extraction that could not be completed, with the reason.
 
 ---
 
@@ -1508,8 +1794,6 @@ Every generated spec file must contain:
 - Covered User Journeys
 - Run Command
 - Headed Run Command
-- Debug Command
-- UI Mode Command
 - Report Command
 
 Documentation should appear at the top of the file.
@@ -1542,7 +1826,7 @@ npx playwright test tests/generated/global.spec.ts
 
 Run Test
 
-npx playwright test tests/generated/global.spec.ts -g "Newsletter Popup"
+npx playwright test tests/generated/global.spec.ts -g "MailingList Popup"
 
 Headed Run
 
@@ -1556,11 +1840,21 @@ npx playwright show-report
 
 ## Test Output
 
-Store generated tests in:
+Group generated Playwright tests by test category:
 
-tests/generated
+- `tests/functional/` — website functional and user-journey tests.
+- `tests/lighthouse/` — Lighthouse audit tests.
+- `tests/sitefinity/` — Sitefinity backend tests, when explicitly in scope.
 
-Generate logical suite structures based on discovered website architecture.
+Create a category folder only when it has applicable tests. Do not invent
+backend or Lighthouse coverage; follow the defined scope and available tooling.
+
+Within each folder, group related tests into spec files based on their
+coverage ownership. Use descriptive file names and avoid duplicating coverage.
+
+Preserve existing tests and follow the existing project's Playwright
+configuration. If the configuration does not discover a required folder,
+report the conflict rather than silently placing tests elsewhere.
 
 ---
 
@@ -1588,6 +1882,12 @@ Do not introduce:
 - architectural changes
 
 unless explicitly requested.
+
+Exception: mandatory Lighthouse coverage authorizes the minimum configuration
+changes and development dependencies needed to create and run the audit.
+Reuse existing tooling and configuration when compatible. Do not change
+unrelated configuration or introduce unrelated dependencies. Report any
+required change that cannot be made or verified.
 
 ---
 
@@ -1670,6 +1970,78 @@ Avoid:
 - Duplicated logic
 - One-off implementations
 - Unnecessarily brittle selectors
+
+---
+
+## Planning Output Strategy
+
+Coverage ownership should be described conceptually rather than through implementation-specific file names.
+
+The planning document should identify:
+
+- Coverage Areas
+- Coverage Ownership
+- Navigation Areas
+- Business Areas
+- Shared Components
+- Major Features
+- User Journeys
+- Validation Opportunities
+
+Avoid generating:
+
+- File: *.spec.ts
+- Exact repository file paths
+- Automation file structures
+- Per-scenario spec ownership
+- Repository implementation details
+
+Avoid organizing planning output around:
+
+- Individual test cases
+- T1 / T2 / T3 structures
+- Automation implementation details
+- Playwright-specific constructs
+
+Coverage ownership should be determined from discovered website structure rather than validation scenarios.
+
+Related workflows, interactions, journeys, features, and validation scenarios should be grouped under the same coverage owner whenever practical.
+
+Coverage ownership should remain conceptual during planning.
+
+Do not assign:
+
+- Spec file names
+- Repository file paths
+- Coverage file structures
+- Individual automation ownership
+
+Spec file organization, repository structure, and automation ownership should be determined during generation.
+
+The planning document should describe:
+
+- What should be covered
+- Why it should be covered
+- Coverage ownership
+- Validation opportunities
+- Discovery findings
+- Coverage gaps
+- Reusable workflow opportunities
+
+The planning document should support future generation rather than prescribe automation implementation.
+
+Planning output should remain implementation-agnostic.
+
+Prefer organizing findings around:
+
+- Coverage Areas
+- Business Domains
+- Navigation Domains
+- Major Features
+- Shared Functionality
+- User Journeys
+
+rather than automation artifacts, repository structures, or implementation details.
 
 ---
 

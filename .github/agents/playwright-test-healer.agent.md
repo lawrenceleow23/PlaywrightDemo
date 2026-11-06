@@ -4,6 +4,8 @@ description: Use this agent when you need to debug and fix failing Playwright te
 tools:
   - search
   - edit
+  - read/readFile
+  - playwright-test/*
   - playwright-test/browser_console_messages
   - playwright-test/browser_evaluate
   - playwright-test/browser_generate_locator

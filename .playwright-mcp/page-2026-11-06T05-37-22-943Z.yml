@@ -1,0 +1,369 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - generic [ref=f2e4]:
+        - link [ref=f2e8] [cursor=pointer]:
+          - /url: /home
+          - img "NUHS Logo" [ref=f2e9]
+        - generic [ref=f2e10]:
+          - generic [ref=f2e14]:
+            - generic [ref=f2e15]:
+              - generic [ref=f2e16] [cursor=pointer]: A
+              - generic [ref=f2e17] [cursor=pointer]
+              - generic [ref=f2e18] [cursor=pointer]: A
+            - list [ref=f2e20]:
+              - listitem [ref=f2e21]:
+                - link "facebook" [ref=f2e22] [cursor=pointer]:
+                  - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                  - generic [ref=f2e23]: 
+              - listitem [ref=f2e24]:
+                - link "instagram" [ref=f2e25] [cursor=pointer]:
+                  - /url: https://www.instagram.com/nuhsofficial
+                  - generic [ref=f2e26]: 
+              - listitem [ref=f2e27]:
+                - link "linkedin" [ref=f2e28] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/national-university-health-system
+                  - generic [ref=f2e29]: 
+            - link [ref=f2e31] [cursor=pointer]:
+              - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+              - text: Subscribe
+              - strong [ref=f2e32]: now
+          - button "search toggler" [ref=f2e33] [cursor=pointer]
+      - textbox "I want to know about..." [ref=f2e36]
+    - navigation [ref=f2e40]:
+      - list [ref=f2e41]:
+        - listitem [ref=f2e42]:
+          - link "NEWS" [ref=f2e43] [cursor=pointer]:
+            - /url: /home#news
+        - listitem [ref=f2e44]:
+          - link "LIFESTYLE" [ref=f2e45] [cursor=pointer]:
+            - /url: /home#lifestyle
+        - listitem [ref=f2e46]:
+          - link "SCIENCE" [ref=f2e47] [cursor=pointer]:
+            - /url: /home#science
+        - listitem [ref=f2e48]:
+          - link "PEOPLE" [ref=f2e49] [cursor=pointer]:
+            - /url: /home#people
+        - listitem [ref=f2e50]:
+          - link "MULTIMEDIA" [ref=f2e51] [cursor=pointer]:
+            - /url: /home#multimedia
+        - listitem [ref=f2e52]:
+          - link "MEDIPEDIA" [ref=f2e53] [cursor=pointer]:
+            - /url: /medipedia
+        - listitem [ref=f2e54]:
+          - generic [ref=f2e55] [cursor=pointer]: ABOUT US
+          - text: 
+  - main [ref=f2e56]:
+    - generic [ref=f2e59]:
+      - button "Previous" [ref=f2e60] [cursor=pointer]: Previous
+      - generic [ref=f2e62]:
+        - link [ref=f2e284] [cursor=pointer]:
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - generic [ref=f2e287]:
+            - generic [ref=f2e288]: People
+            - paragraph [ref=f2e289]: "Care beyond borders: a journey far from home"
+            - generic [ref=f2e290]: 
+        - link [ref=f2e426] [cursor=pointer]:
+          - /url: /article/when-eye-problems-are-more-than-they-seem
+          - generic [ref=f2e294]:
+            - generic [ref=f2e295]: Lifestyle
+            - generic [ref=f2e296]: People
+            - generic [ref=f2e297]: Medipedia
+            - paragraph [ref=f2e298]: When eye problems are more than they seem
+            - generic [ref=f2e299]: 
+        - link [ref=f2e430] [cursor=pointer]:
+          - /url: /stories/care-beyond-borders-a-journey-far-from-home
+          - generic [ref=f2e303]:
+            - generic [ref=f2e304]: People
+            - paragraph [ref=f2e305]: "Care beyond borders: a journey far from home"
+            - generic [ref=f2e306]: 
+        - link "What your phone picks up behind closed doors Lifestyle People What your phone picks up behind closed doors " [ref=f2e432] [cursor=pointer]:
+          - /url: /article/what-your-phone-picks-up-behind-closed-doors
+          - img "What your phone picks up behind closed doors" [ref=f2e433]
+          - generic [ref=f2e310]:
+            - generic [ref=f2e311]: Lifestyle
+            - generic [ref=f2e312]: People
+            - paragraph [ref=f2e313]: What your phone picks up behind closed doors
+            - generic [ref=f2e314]: 
+        - link [ref=f2e315] [cursor=pointer]:
+          - /url: /stories/photo-story-title-test-october-2026
+          - generic [ref=f2e318]:
+            - generic [ref=f2e319]: Multimedia
+            - generic [ref=f2e320]: News
+            - generic [ref=f2e321]: Science
+            - paragraph [ref=f2e322]: Photo Story Title
+            - generic [ref=f2e323]: 
+        - link [ref=f2e324] [cursor=pointer]:
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - generic [ref=f2e327]:
+            - generic [ref=f2e328]: People
+            - paragraph [ref=f2e329]: "Care beyond borders: a journey far from home"
+            - generic [ref=f2e330]: 
+        - link [ref=f2e331] [cursor=pointer]:
+          - /url: /article/when-eye-problems-are-more-than-they-seem
+          - generic [ref=f2e334]:
+            - generic [ref=f2e335]: Lifestyle
+            - generic [ref=f2e336]: People
+            - generic [ref=f2e337]: Medipedia
+            - paragraph [ref=f2e338]: When eye problems are more than they seem
+            - generic [ref=f2e339]: 
+        - link [ref=f2e340] [cursor=pointer]:
+          - /url: /stories/care-beyond-borders-a-journey-far-from-home
+          - generic [ref=f2e343]:
+            - generic [ref=f2e344]: People
+            - paragraph [ref=f2e345]: "Care beyond borders: a journey far from home"
+            - generic [ref=f2e346]: 
+        - link [ref=f2e347] [cursor=pointer]:
+          - /url: /article/what-your-phone-picks-up-behind-closed-doors
+          - generic [ref=f2e350]:
+            - generic [ref=f2e351]: Lifestyle
+            - generic [ref=f2e352]: People
+            - paragraph [ref=f2e353]: What your phone picks up behind closed doors
+            - generic [ref=f2e354]: 
+        - link [ref=f2e355] [cursor=pointer]:
+          - /url: /stories/photo-story-title-test-october-2026
+          - generic [ref=f2e358]:
+            - generic [ref=f2e359]: Multimedia
+            - generic [ref=f2e360]: News
+            - generic [ref=f2e361]: Science
+            - paragraph [ref=f2e362]: Photo Story Title
+            - generic [ref=f2e363]: 
+        - link [ref=f2e364] [cursor=pointer]:
+          - /url: /article/care-beyond-borders--a-journey-far-from-home
+          - generic [ref=f2e367]:
+            - generic [ref=f2e368]: People
+            - paragraph [ref=f2e369]: "Care beyond borders: a journey far from home"
+            - generic [ref=f2e370]: 
+      - button "Next" [ref=f2e85] [cursor=pointer]: Next
+    - generic [ref=f2e87]:
+      - generic [ref=f2e88]:
+        - link "Article Title News Science People Article Title " [ref=f2e90] [cursor=pointer]:
+          - /url: /article/article-title-test-october-2026
+          - img "Article Title" [ref=f2e92]
+          - generic [ref=f2e93]:
+            - generic [ref=f2e94]: News
+            - generic [ref=f2e95]: Science
+            - generic [ref=f2e96]: People
+            - paragraph [ref=f2e97]: Article Title
+            - text: 
+            - generic [ref=f2e98]: 
+        - link "Article Title News Science People Article Title " [ref=f2e100] [cursor=pointer]:
+          - /url: /article/article-title
+          - img "Article Title" [ref=f2e102]
+          - generic [ref=f2e103]:
+            - generic [ref=f2e104]: News
+            - generic [ref=f2e105]: Science
+            - generic [ref=f2e106]: People
+            - paragraph [ref=f2e107]: Article Title
+            - text: 
+            - generic [ref=f2e108]: 
+      - generic [ref=f2e110]:
+        - link "A new role for AI in speech rehabilitation Science A new role for AI in speech rehabilitation  Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care." [ref=f2e112] [cursor=pointer]:
+          - /url: /article/a-new-role-for-ai-in-speech-rehabilitation
+          - img "A new role for AI in speech rehabilitation" [ref=f2e114]
+          - generic [ref=f2e115]:
+            - generic [ref=f2e116]: Science
+            - paragraph [ref=f2e117]: A new role for AI in speech rehabilitation
+            - generic [ref=f2e118]: 
+            - paragraph [ref=f2e119]: Could AI bring rehabilitation beyond the clinic? NUHS is evaluating AISay to support recovery at home while complementing therapists’ care.
+        - link "Test - When does recovery start? Multimedia News Science Test - When does recovery start?  Test - – Earlier than we thought. For patients undergoing total knee replacement, recovery began before surgery itself and led to a 67 per cent shorter hospital stay." [ref=f2e121] [cursor=pointer]:
+          - /url: /stories/test---when-does--recovery-start
+          - img "Test - When does recovery start?" [ref=f2e123]
+          - generic [ref=f2e124]:
+            - generic [ref=f2e125]: Multimedia
+            - generic [ref=f2e126]: News
+            - generic [ref=f2e127]: Science
+            - paragraph [ref=f2e128]: Test - When does recovery start?
+            - generic [ref=f2e129]: 
+            - paragraph [ref=f2e130]: Test - – Earlier than we thought. For patients undergoing total knee replacement, recovery began before surgery itself and led to a 67 per cent shorter hospital stay.
+        - link "Test - What are we not seeing? Multimedia News Science Test - What are we not seeing?  This is to test the standfirst" [ref=f2e132] [cursor=pointer]:
+          - /url: /stories/test---what-are-we-not-seeing
+          - img "Test - What are we not seeing?" [ref=f2e134]
+          - generic [ref=f2e135]:
+            - generic [ref=f2e136]: Multimedia
+            - generic [ref=f2e137]: News
+            - generic [ref=f2e138]: Science
+            - paragraph [ref=f2e139]: Test - What are we not seeing?
+            - generic [ref=f2e140]: 
+            - paragraph [ref=f2e141]: This is to test the standfirst
+        - link "Test - Why strength training matters as we age Lifestyle Test - Why strength training matters as we age  Test - Aerobic activities alone are insufficient to maintain the strength needed for daily life, especially as we age. Here's how older adults can build functional strength safely." [ref=f2e435] [cursor=pointer]:
+          - /url: /article/test---why-strength-training-matters-as-we-age
+          - img "Test - Why strength training matters as we age" [ref=f2e437]
+          - generic [ref=f2e438]:
+            - generic [ref=f2e439]: Lifestyle
+            - paragraph [ref=f2e440]: Test - Why strength training matters as we age
+            - generic [ref=f2e441]: 
+            - paragraph [ref=f2e442]: Test - Aerobic activities alone are insufficient to maintain the strength needed for daily life, especially as we age. Here's how older adults can build functional strength safely.
+        - link "test stand firsy Multimedia test stand firsy  This is it" [ref=f2e444] [cursor=pointer]:
+          - /url: /stories/test-stand-firsy
+          - img "test stand firsy" [ref=f2e446]
+          - generic [ref=f2e447]:
+            - generic [ref=f2e448]: Multimedia
+            - paragraph [ref=f2e449]: test stand firsy
+            - generic [ref=f2e450]: 
+            - paragraph [ref=f2e451]: This is it
+        - link "What happens when you go for a C-section? - LTest News What happens when you go for a C-section? - LTest  A Caesarean section is a major surgery, but it can still be an intimate experience." [ref=f2e453] [cursor=pointer]:
+          - /url: /stories/what-happens-when-you-go-for-a-c-section----ltest
+          - img "What happens when you go for a C-section? - LTest" [ref=f2e455]
+          - generic [ref=f2e456]:
+            - generic [ref=f2e457]: News
+            - paragraph [ref=f2e458]: What happens when you go for a C-section? - LTest
+            - generic [ref=f2e459]: 
+            - paragraph [ref=f2e460]: A Caesarean section is a major surgery, but it can still be an intimate experience.
+        - link "Test - How AI supports antimicrobial stewardship in primary care News Lifestyle Multimedia Test - How AI supports antimicrobial stewardship in primary care  This is testing for standfirst" [ref=f2e462] [cursor=pointer]:
+          - /url: /article/test---how-ai-supports-antimicrobial-stewardship-in-primary-care
+          - img "Test - How AI supports antimicrobial stewardship in primary care" [ref=f2e464]
+          - generic [ref=f2e465]:
+            - generic [ref=f2e466]: News
+            - generic [ref=f2e467]: Lifestyle
+            - generic [ref=f2e468]: Multimedia
+            - paragraph [ref=f2e469]: Test - How AI supports antimicrobial stewardship in primary care
+            - generic [ref=f2e470]: 
+            - paragraph [ref=f2e471]: This is testing for standfirst
+        - 'link "Test - IntelliRounds: Smarter patient prioritisation for ward rounds Science News Multimedia Test - IntelliRounds: Smarter patient prioritisation for ward rounds  this is testing for standfirst" [ref=f2e473] [cursor=pointer]':
+          - /url: /stories/test---intellirounds--smarter-patient-prioritisation-for-ward-rounds
+          - 'img "Test - IntelliRounds: Smarter patient prioritisation for ward rounds" [ref=f2e475]'
+          - generic [ref=f2e476]:
+            - generic [ref=f2e477]: Science
+            - generic [ref=f2e478]: News
+            - generic [ref=f2e479]: Multimedia
+            - paragraph [ref=f2e480]: "Test - IntelliRounds: Smarter patient prioritisation for ward rounds"
+            - generic [ref=f2e481]: 
+            - paragraph [ref=f2e482]: this is testing for standfirst
+        - link "Test - The doctor-pilot who never stops learning (Safe Zone) Multimedia People Test - The doctor-pilot who never stops learning (Safe Zone)  From the cockpit to the Intensive Care Unit, Clin Asst Prof Shanaz Matthew Sajeed charts new ways to learn, lead and save lives." [ref=f2e484] [cursor=pointer]:
+          - /url: /stories/the-doctor-pilot-who-never-stops-learning-test
+          - img "Test - The doctor-pilot who never stops learning (Safe Zone)" [ref=f2e486]
+          - generic [ref=f2e487]:
+            - generic [ref=f2e488]: Multimedia
+            - generic [ref=f2e489]: People
+            - paragraph [ref=f2e490]: Test - The doctor-pilot who never stops learning (Safe Zone)
+            - generic [ref=f2e491]: 
+            - paragraph [ref=f2e492]: From the cockpit to the Intensive Care Unit, Clin Asst Prof Shanaz Matthew Sajeed charts new ways to learn, lead and save lives.
+    - generic [ref=f2e147]:
+      - link [ref=f2e149] [cursor=pointer]:
+        - /url: /generalSearch/?keyword=podcast
+        - heading "Podcast" [level=2] [ref=f2e150]
+      - generic [ref=f2e151]:
+        - button [disabled] [ref=f2e152]:
+          - emphasis [ref=f2e153]: 
+        - button [ref=f2e154] [cursor=pointer]:
+          - emphasis [ref=f2e155]: 
+      - generic [ref=f2e159]:
+        - link [ref=f2e371] [cursor=pointer]:
+          - /url: /article/beyond-bedside-how-nursing-roles-are-evolving-at-nuhs
+          - 'img "Beyond bedside: How nursing roles are evolving at NUHS" [ref=f2e373]'
+          - paragraph [ref=f2e375]: "Beyond bedside: How nursing roles are evolving at NUHS"
+        - link [ref=f2e376] [cursor=pointer]:
+          - /url: /article/testing-only
+          - img "Testing only" [ref=f2e378]
+          - paragraph [ref=f2e380]: Testing only
+        - link [ref=f2e381] [cursor=pointer]:
+          - /url: /article/zoom-fatigue-how-to-dial-back
+          - 'img "Zoom fatigue: How to dial back" [ref=f2e383]'
+          - paragraph [ref=f2e385]: "Zoom fatigue: How to dial back"
+        - link [ref=f2e386] [cursor=pointer]:
+          - /url: /article/dna-detectives-hunting-down-hidden-hospital-bacteria
+          - paragraph [ref=f2e390]: "DNA detectives: Hunting down hidden hospital bacteria"
+        - link [ref=f2e391] [cursor=pointer]:
+          - /url: /stories/can-better-recovery-begin-before-surgery
+          - paragraph [ref=f2e393]: When does recovery start?
+        - link [ref=f2e394] [cursor=pointer]:
+          - /url: /stories/nuhs-avbc-are-we-asking-the-right-questions
+          - paragraph [ref=f2e396]: Are we asking the right questions?
+        - link [ref=f2e397] [cursor=pointer]:
+          - /url: /stories/why-are-we-still-admitting-them
+          - paragraph [ref=f2e399]: Where should recovery happen?
+        - link [ref=f2e400] [cursor=pointer]:
+          - /url: /stories/the-goal-behind-the-goal
+          - paragraph [ref=f2e402]: Who is the goal really for?
+    - generic [ref=f2e207]:
+      - paragraph [ref=f2e208]: Stay informed
+      - paragraph [ref=f2e209]: on the latest health, science and patient stories from NUHS.
+      - link [ref=f2e210] [cursor=pointer]:
+        - /url: https://form.gov.sg/691ae87bae12f9acde66373a
+        - text: Subscribe
+        - strong [ref=f2e211]: now
+  - contentinfo [ref=f2e212]:
+    - button "" [ref=f2e213] [cursor=pointer]
+    - generic [ref=f2e217]:
+      - generic [ref=f2e218]:
+        - link [ref=f2e220] [cursor=pointer]:
+          - /url: https://www.nuhs.edu.sg/Pages/Home.aspx
+          - img "White NUHS Logo" [ref=f2e221]
+        - generic [ref=f2e222]:
+          - list [ref=f2e224]:
+            - listitem [ref=f2e225]:
+              - link "National University Hospital" [ref=f2e226] [cursor=pointer]:
+                - /url: https://www.nuh.com.sg/Pages/Home.aspx
+            - listitem [ref=f2e227]:
+              - link "Ng Teng Fong General Hospital" [ref=f2e228] [cursor=pointer]:
+                - /url: https://www.ntfgh.com.sg/Pages/default.aspx
+            - listitem [ref=f2e229]:
+              - link "Alexandra Hospital" [ref=f2e230] [cursor=pointer]:
+                - /url: https://www.ah.com.sg/Pages/Home.aspx
+            - listitem [ref=f2e231]:
+              - link "Jurong Community Hospital" [ref=f2e232] [cursor=pointer]:
+                - /url: https://www.jch.com.sg/Pages/default.aspx
+            - listitem [ref=f2e233]:
+              - link "National University Polyclinics" [ref=f2e234] [cursor=pointer]:
+                - /url: https://www.nup.com.sg/
+          - list [ref=f2e236]:
+            - listitem [ref=f2e237]:
+              - link "Jurong Medical Centre" [ref=f2e238] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Care-in-the-Community/JMC/Pages/default.aspx
+            - listitem [ref=f2e239]:
+              - link "National University Cancer Institute Singapore" [ref=f2e240] [cursor=pointer]:
+                - /url: https://www.ncis.com.sg/Pages/Home.aspx
+            - listitem [ref=f2e241]:
+              - link "National University Heart Centre Singapore" [ref=f2e242] [cursor=pointer]:
+                - /url: https://www.nuhcs.com.sg/Pages/default.aspx
+            - listitem [ref=f2e243]:
+              - link "National University Centre for Oral Health Singapore" [ref=f2e244] [cursor=pointer]:
+                - /url: https://www.nucohs.com.sg/Pages/home.aspx
+            - listitem [ref=f2e245]:
+              - link "NUHS Diagnostics" [ref=f2e246] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Diagnostics/Pages/default.aspx
+          - list [ref=f2e248]:
+            - listitem [ref=f2e249]:
+              - link "NUHS Pharmacy" [ref=f2e250] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/For-Patients-Visitors/NUHS-Pharmacy/Pages/default.aspx
+            - listitem [ref=f2e251]:
+              - link "National University of Singapore - Yong Loo Lin School of Medicine" [ref=f2e252] [cursor=pointer]:
+                - /url: https://medicine.nus.edu.sg/
+            - listitem [ref=f2e253]:
+              - link "National University of Singapore - Faculty of Dentistry" [ref=f2e254] [cursor=pointer]:
+                - /url: http://www.dentistry.nus.edu.sg/
+            - listitem [ref=f2e255]:
+              - link "National University of Singapore - Saw Swee Hock School of Public Health" [ref=f2e256] [cursor=pointer]:
+                - /url: https://sph.nus.edu.sg/
+      - generic [ref=f2e257]:
+        - generic [ref=f2e259]:
+          - list [ref=f2e260]:
+            - listitem [ref=f2e261]:
+              - link "About NUHS" [ref=f2e262] [cursor=pointer]:
+                - /url: /about-us/nuhs
+            - listitem [ref=f2e263]:
+              - link "Terms of Use" [ref=f2e264] [cursor=pointer]:
+                - /url: https://www.nuhs.edu.sg/Pages/terms-of-use.aspx
+          - list [ref=f2e265]:
+            - listitem [ref=f2e266]:
+              - link "linkedin" [ref=f2e267] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/national-university-health-system
+                - generic [ref=f2e268]: 
+            - listitem [ref=f2e269]:
+              - link "facebook" [ref=f2e270] [cursor=pointer]:
+                - /url: https://www.facebook.com/NationalUniversityHealthSystem
+                - generic [ref=f2e271]: 
+            - listitem [ref=f2e272]:
+              - link "instagram" [ref=f2e273] [cursor=pointer]:
+                - /url: https://www.instagram.com/nuhsofficial
+                - generic [ref=f2e274]: 
+            - listitem [ref=f2e275]:
+              - link "tiktok" [ref=f2e276] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@nuhsofficial
+                - generic [ref=f2e277]: 
+            - listitem [ref=f2e278]:
+              - link "facebook" [ref=f2e279] [cursor=pointer]:
+                - /url: https://t.me/nuhsofficial
+                - generic [ref=f2e280]: 
+        - paragraph [ref=f2e282]: © 2026 National University Health System
