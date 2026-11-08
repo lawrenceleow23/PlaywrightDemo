@@ -13,6 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  testIgnore: '**/lighthouse/**',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -36,16 +37,21 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+      testMatch: ['functional/**/*.spec.ts', 'seed.spec.ts'],
       use: { ...devices['Desktop Chrome'] },
     },
 
     {
       name: 'firefox',
+      testMatch: ['functional/**/*.spec.ts', 'seed.spec.ts'],
+      testIgnore: '**/homepage-seo.spec.ts',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
       name: 'webkit',
+      testMatch: ['functional/**/*.spec.ts', 'seed.spec.ts'],
+      testIgnore: '**/homepage-seo.spec.ts',
       use: { ...devices['Desktop Safari'] },
     },
 
